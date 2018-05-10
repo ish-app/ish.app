@@ -1,3 +1,5 @@
+/* Main stylesheet for ish.app */
+
 body {
 	background: #161616;
 	color: #d1d1d1;
@@ -5,46 +7,54 @@ body {
 	padding: 24px;
 }
 
-.title {
-    font-size: 36px;
-    color: #fff;
-   	margin-left: 16px;
-   	display: inline;
+/* Font & Texts */
+h1, h2 {
+	font-weight: 200;
 }
 
+.title {
+	font-size: 32px;
+	color: #fff;
+}
+
+/* iSH icon in header */
 .headerimg {
 	height: 64px;
 	width: 64px;
 	border-radius: 16px;
 	border: 2px solid #d1d1d1;
 	margin: 16px;
-	vertical-align: middle;
 }
 
-h1 {
-	font-weight: 200;
-}
-
+/* Header */
 header {
 	box-shadow: 0 0 4px black;
 	height: 96px;
 	width: 100%;
-	z-index: 10;
 	background-color: #262626;
-   	display: inline-block;
+	/* Flexboxes */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
+/* Navigation bar */
+nav {
+	display: flex;
+	float: right;
+}
 
 nav a {
 	border-bottom: 3px solid rgba(255, 255, 255, 0.1);
 	border-top: 3px solid rgba(255, 255, 255, 0.1);
 	color: inherit;
 	padding: 16px;
-	padding-right: 32px;
-	padding-left: 32px;
+	width: 100px;
+	text-align: center;
 	transition: background .2s ease-in-out, box-shadow .4s, color .5s, border-bottom 1s, border-top 1s;
 	float: right;
-	margin-right: 16px;
+	margin-right: 12px;
+	margin-left: 12px;
 	font-size: 20px;
 }
 
@@ -52,15 +62,16 @@ nav a:hover {
 	background: rgba(255, 255, 255, 0.1);
 	border-bottom: 3px solid white;
 	border-top: 3px solid white;
-	box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 
 a {
 	text-decoration: none;
 }
 
+.divider {
+	border-left: 1px solid #323232;
+}
 
-
-
-
-
+.flexdivider {
+	width: 100%;
+}

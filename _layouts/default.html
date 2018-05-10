@@ -1,17 +1,19 @@
 <html>
 	<head>
-		<title>iSH</title>
+		<title>{{ site.title }}</title>
 		<link rel="stylesheet" href="style.css" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
 		<header>
-			<img src="assets/icon.png" class="headerimg"></img>
-			<h1 class="title">iSH</h1>
+			<img src="assets/icon.png" class="headerimg" />
+			<h1 class="title">{{ site.title }}</h1>
+			<div class=flexdivider></div>
 			<nav>
-				<a href="/get">Get</a>
 				<a href="/">Home</a>
+				<div class="divider"></div>
+				<a href="/get">Get {{ site.title }}</a>
 			</nav>
 		</header>
 		{{ content }}

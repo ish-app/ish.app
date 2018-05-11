@@ -8,13 +8,17 @@ body {
 }
 
 /* Font & Texts */
-h1, h2 {
+h1, h2, h3 {
 	font-weight: 200;
+	text-align: center;
 }
 
-.title {
+#title {
 	font-size: 32px;
 	color: #fff;
+	position: relative;
+	top: 4px;
+	opacity: 0;
 }
 
 /* iSH icon in header */
@@ -28,30 +32,34 @@ h1, h2 {
 
 /* Header */
 header {
-	box-shadow: 0 0 4px black;
+	box-shadow: 0 0 0px black;
 	height: 96px;
 	width: 100%;
 	background-color: #262626;
+	line-height: 32px;
+	background: rgba(38, 38, 38, 0);
+	left: 0;
+	top: 0;
+	position: fixed;
+	z-index: 2;
 	/* Flexboxes */
 	display: flex;
-	justify-content: flex-start;
 	align-items: center;
 }
 
 /* Navigation bar */
 nav {
-	display: flex;
-	float: right;
+	display: inherit;
 }
 
 nav a {
-	border-bottom: 3px solid rgba(255, 255, 255, 0.1);
-	border-top: 3px solid rgba(255, 255, 255, 0.1);
+	border: solid rgba(255, 255, 255, 0.1);
+	border-width: 3px 0;
 	color: inherit;
 	padding: 16px;
 	width: 100px;
 	text-align: center;
-	transition: background .2s ease-in-out, box-shadow .4s, color .5s, border-bottom 1s, border-top 1s;
+	transition: background .2s ease-in-out, box-shadow .4s, color .5s, border 1s;
 	float: right;
 	margin-right: 12px;
 	margin-left: 12px;
@@ -60,18 +68,93 @@ nav a {
 
 nav a:hover {
 	background: rgba(255, 255, 255, 0.1);
-	border-bottom: 3px solid white;
-	border-top: 3px solid white;
+	border: 3px solid white;
+	border-width: 3px 0;
+	color: white;
 }
 
 a {
+	color: inherit;
 	text-decoration: none;
 }
 
+/* Front page container. */
+.front-container {
+	display: flex;
+	align-items: center;
+	padding: 48px;
+	margin-top: 48px;
+	justify-content: space-around;
+	margin-left: 100px;
+}
+
+/* The large iSH icon. */
+.icon {
+	height: auto;
+	width: 420px;
+	border-radius: 16px;
+	border: 2px solid #d1d1d1;
+}
+
+.fronttext {
+	width: 700px;
+	text-align: center;
+	margin-top: 12px;
+}
+
+.fronttext h1 {
+	font-size: 48px;
+	margin: 0;
+}
+
+.photo-container {
+    float: right;
+    right: 0;
+    text-align: center;
+}
+
+.photo {
+	height: auto;
+	max-width: 65%;
+	border-radius: 30px;
+}
+
+.hidden {
+	opacity: 1;
+}
+
+.downarrow {
+	bottom: 0;
+	font-size: 92px !important;
+}
+
+/* "Get iSH" section */
+#get {
+	text-align: center;	
+}
+
+#get h1 {
+	font-size: 42px;
+}
+
+/* Dividers */
 .divider {
 	border-left: 1px solid #323232;
 }
 
 .flexdivider {
 	width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+	.front-container {
+		flex-wrap: wrap;
+	}
+	.photo {
+		max-width: 100%;
+	}
+	.hidden {
+		position: absolute;
+		top: -75vh;
+	}
 }

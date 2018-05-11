@@ -4,16 +4,28 @@
 		<link rel="stylesheet" href="style.css" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="site.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<noscript>
+			<style>
+			header {
+				background-color: #262626;
+				box-shadow: 0 0 4px black;
+			}
+			</style>
+		</noscript>
 	</head>
 	<body>
 		<header>
 			<img src="assets/icon.png" class="headerimg" />
-			<h1 class="title">{{ site.title }}</h1>
+			<span id="title">{{ site.title }}</span>
 			<div class=flexdivider></div>
 			<nav>
-				<a href="/">Home</a>
-				<div class="divider"></div>
-				<a href="/get">Get {{ site.title }}</a>
+				<a class="hidden" href="#home">Home</a>
+				<div class="hidden divider"></div>
+				<a href="#get">Get {{ site.title }}</a>
 			</nav>
 		</header>
 		{{ content }}

@@ -114,10 +114,17 @@ nav a:hover {
 	width: 300px;
 }
 
-/* That main photo */
+/* Photos */
 .photo {
 	height: auto;
 	width: 100%;
+}
+
+/* iPad photo */
+.ipad {
+	height: auto;
+	width: 750px;
+	padding-bottom: 12px;
 }
 
 /* Objects to be hidden on
@@ -139,22 +146,14 @@ nav a:hover {
 	padding: 1px;
 }
 
-/* "Info" section */
+/* "Info" and "Getting iSH" sections */
 #info {
 }
 
-#info h1 {
+#info h1,
+#get h1 {
 	font-size: 36px;
 	margin: 12px;
-}
-
-/* "Get iSH" section */
-#get {
-	text-align: center;	
-}
-
-#get h1 {
-	font-size: 42px;
 }
 
 /* Dividers */

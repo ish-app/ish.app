@@ -82,16 +82,14 @@ nav a:hover {
 	display: flex;
 	align-items: center;
 	padding: 48px;
-	margin-top: 48px;
-	justify-content: space-around;
-	margin-left: 100px;
+	margin-top: 72px;
 	height: 70%;
 }
 
 /* The large iSH icon. */
 .icon {
 	height: auto;
-	width: 420px;
+	width: 250px;
 	border-radius: 16px;
 	border: 2px solid #d1d1d1;
 	margin-right: 20px;
@@ -99,8 +97,9 @@ nav a:hover {
 
 /* Primary text on front page */
 .fronttext {
-	width: 1000px;
+
 	margin-top: 12px;
+	flex-grow: 1;
 }
 
 .fronttext h1 {
@@ -110,15 +109,15 @@ nav a:hover {
 
 /* Photo container for main photo */
 .photo-container {
-	margin-top: 70px;
 	float: right;
 	right: 0;
+	width: 300px;
 }
 
 /* That main photo */
 .photo {
 	height: auto;
-	width: 80%;
+	width: 100%;
 }
 
 /* Objects to be hidden on

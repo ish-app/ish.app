@@ -83,22 +83,22 @@ nav a:hover {
 	align-items: center;
 	padding: 48px;
 	margin-top: 72px;
+	margin-left: 5%;
+	margin-right: 5%;
 	height: 70%;
 }
 
 /* The large iSH icon. */
 .icon {
 	height: auto;
-	width: 250px;
+	width: 100%;
 	border-radius: 16px;
 	border: 2px solid #d1d1d1;
-	margin-right: 20px;
 }
 
 /* Primary text on front page */
 .fronttext {
-
-	margin-top: 12px;
+	margin: 24px;
 	flex-grow: 1;
 }
 

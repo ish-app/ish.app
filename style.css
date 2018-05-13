@@ -77,6 +77,28 @@ nav a:hover {
 	color: white;
 }
 
+/* Inputs */
+input[type=text] {
+    width: 70%;
+    font-size: 22px;
+    padding: 12px;
+    margin: 8px;
+    border: none;
+    border-bottom: 2px solid #161616;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+	width: 120px;
+	font-size: 20px
+}
+
+input[type=text]:focus {
+    border-bottom: 2px solid #4286f4;
+    box-shadow: 4px 4px 4px 0 rgba(38, 38, 38, 0.25);
+}
+
 /* Front page container. */
 .front-container {
 	display: flex;
@@ -91,14 +113,14 @@ nav a:hover {
 /* The large iSH icon. */
 .icon {
 	height: auto;
-	width: 100%;
+	width: 200px;
 	border-radius: 16px;
 	border: 2px solid #d1d1d1;
 }
 
 /* Primary text on front page */
 .fronttext {
-	margin: 24px;
+	text-align: left;
 	flex-grow: 1;
 }
 
@@ -109,13 +131,15 @@ nav a:hover {
 
 /* Photo container for main photo */
 .photo-container {
+	display: flex;
+	align-items: center;
+	width: 300px;
 	float: right;
 	right: 0;
-	width: 300px;
 }
 
-/* Photos */
-.photo {
+/* iPhone X image */
+.iphone {
 	height: auto;
 	width: 100%;
 }
@@ -144,6 +168,35 @@ nav a:hover {
 	background-color: #d1d1d1;
 	color: #161616;
 	padding: 1px;
+}
+
+.block {
+	width: 200px;
+	background-color: #d1d1d1;
+	color: #161616;
+	border-radius: 12px;
+	margin-right: 70px;
+	box-shadow: 4px 4px 12px 0 rgba(255, 255, 255, 0);
+	flex-grow: 1;
+}
+
+.block h1 {
+	font-size: 32px;
+	margin-bottom: 4px;
+}
+
+.block h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.block a {
+	color: inherit;
+	transition: .5s color;
+}
+
+.block a:hover {
+	color: #4286f4;
 }
 
 /* "Info" and "Getting iSH" sections */

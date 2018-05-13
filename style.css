@@ -4,13 +4,12 @@ body {
 	background: #161616;
 	color: #d1d1d1;
 	font-family: Roboto,Helvetica,sans-serif;
-	padding: 24px;
+	text-align: center;
 }
 
 /* Font & Texts */
 h1, h2, h3 {
 	font-weight: 200;
-	text-align: center;
 }
 
 /* iSH icon in header */
@@ -50,7 +49,6 @@ nav a {
 	color: inherit;
 	padding: 16px;
 	width: 100px;
-	text-align: center;
 	transition: background .2s ease-in-out, box-shadow .4s, color .5s, border 1s;
 	float: right;
 	margin-right: 12px;
@@ -92,7 +90,6 @@ a {
 
 .fronttext {
 	width: 700px;
-	text-align: center;
 	margin-top: 12px;
 }
 
@@ -102,9 +99,9 @@ a {
 }
 
 .photo-container {
+	margin-top: 50px;
 	float: right;
 	right: 0;
-	text-align: center;
 }
 
 .photo {
@@ -121,6 +118,21 @@ a {
 	font-size: 92px !important;
 }
 
+.lightsec {
+	background-color: #d1d1d1;
+	color: #161616;
+	padding: 1px;
+}
+
+/* "Info" section */
+#info {
+}
+
+#info h1 {
+	font-size: 36px;
+	margin: 12px;
+}
+
 /* "Get iSH" section */
 #get {
 	text-align: center;	
@@ -133,6 +145,12 @@ a {
 /* Dividers */
 .divider {
 	border-left: 1px solid #323232;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid grey;
+	width: 50%;
 }
 
 .flexdivider {

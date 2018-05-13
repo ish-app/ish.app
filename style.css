@@ -5,11 +5,17 @@ body {
 	color: #d1d1d1;
 	font-family: Roboto,Helvetica,sans-serif;
 	text-align: center;
+	margin: 0;
 }
 
 /* Font & Texts */
 h1, h2, h3 {
 	font-weight: 200;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
 /* iSH icon in header */
@@ -19,6 +25,13 @@ h1, h2, h3 {
 	border-radius: 16px;
 	border: 2px solid #d1d1d1;
 	margin: 16px;
+}
+
+/* Neat horizontal divider */
+hr {
+	border: 0;
+	border-top: 1px solid grey;
+	width: 50%;
 }
 
 /* Header */
@@ -43,6 +56,7 @@ nav {
 	display: inherit;
 }
 
+/* Navigation bar links */
 nav a {
 	border: solid rgba(255, 255, 255, 0.1);
 	border-width: 3px 0;
@@ -61,11 +75,6 @@ nav a:hover {
 	border: 3px solid white;
 	border-width: 3px 0;
 	color: white;
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
 }
 
 /* Front page container. */
@@ -88,8 +97,9 @@ a {
 	margin-right: 20px;
 }
 
+/* Primary text on front page */
 .fronttext {
-	width: 700px;
+	width: 1000px;
 	margin-top: 12px;
 }
 
@@ -98,26 +108,32 @@ a {
 	margin: 0;
 }
 
+/* Photo container for main photo */
 .photo-container {
-	margin-top: 50px;
+	margin-top: 70px;
 	float: right;
 	right: 0;
 }
 
+/* That main photo */
 .photo {
 	height: auto;
 	width: 80%;
 }
 
+/* Objects to be hidden on
+	mobile to save space */
 .hidden {
 	opacity: 1;
 }
 
+/* The arrow pointing down */
 .downarrow {
 	bottom: 0;
 	font-size: 92px !important;
 }
 
+/* Light sections */
 .lightsec {
 	background-color: #d1d1d1;
 	color: #161616;
@@ -147,16 +163,12 @@ a {
 	border-left: 1px solid #323232;
 }
 
-hr {
-	border: 0;
-	border-top: 1px solid grey;
-	width: 50%;
-}
-
+/* Flexdivider creates space to separate objects in flex */
 .flexdivider {
-	width: 100%;
+	width: 90%;
 }
 
+/* Mobile optimisations */
 @media only screen and (max-width: 700px) {
 	.front-container {
 		flex-wrap: wrap;

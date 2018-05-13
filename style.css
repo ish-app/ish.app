@@ -13,14 +13,6 @@ h1, h2, h3 {
 	text-align: center;
 }
 
-#title {
-	font-size: 32px;
-	color: #fff;
-	position: relative;
-	top: 4px;
-	opacity: 0;
-}
-
 /* iSH icon in header */
 .headerimg {
 	height: 64px;
@@ -86,6 +78,7 @@ a {
 	margin-top: 48px;
 	justify-content: space-around;
 	margin-left: 100px;
+	height: 70%;
 }
 
 /* The large iSH icon. */
@@ -94,6 +87,7 @@ a {
 	width: 420px;
 	border-radius: 16px;
 	border: 2px solid #d1d1d1;
+	margin-right: 20px;
 }
 
 .fronttext {
@@ -108,15 +102,14 @@ a {
 }
 
 .photo-container {
-    float: right;
-    right: 0;
-    text-align: center;
+	float: right;
+	right: 0;
+	text-align: center;
 }
 
 .photo {
 	height: auto;
-	max-width: 65%;
-	border-radius: 30px;
+	width: 80%;
 }
 
 .hidden {
@@ -149,6 +142,12 @@ a {
 @media only screen and (max-width: 700px) {
 	.front-container {
 		flex-wrap: wrap;
+		margin-left: 0;
+		margin-top: 8%;
+	}
+	.icon {
+		width: 50%;
+		margin-bottom: 20px;
 	}
 	.photo {
 		max-width: 100%;

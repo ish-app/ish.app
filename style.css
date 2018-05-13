@@ -79,14 +79,14 @@ nav a:hover {
 
 /* Inputs */
 input[type=text] {
-    width: 70%;
-    font-size: 22px;
-    padding: 12px;
-    margin: 8px;
-    border: none;
-    border-bottom: 2px solid #161616;
-    transition: 0.5s;
-    border-radius: 4px;
+	width: 70%;
+	font-size: 22px;
+	padding: 12px;
+	margin: 8px;
+	border: none;
+	border-bottom: 2px solid #161616;
+	transition: 0.5s;
+	border-radius: 4px;
 }
 
 input[type=submit] {
@@ -95,8 +95,8 @@ input[type=submit] {
 }
 
 input[type=text]:focus {
-    border-bottom: 2px solid #4286f4;
-    box-shadow: 4px 4px 4px 0 rgba(38, 38, 38, 0.25);
+	border-bottom: 2px solid #4286f4;
+	box-shadow: 4px 4px 4px 0 rgba(38, 38, 38, 0.25);
 }
 
 /* Front page container. */
@@ -134,8 +134,6 @@ input[type=text]:focus {
 	display: flex;
 	align-items: center;
 	width: 300px;
-	float: right;
-	right: 0;
 }
 
 /* iPhone X image */
@@ -177,7 +175,6 @@ input[type=text]:focus {
 	border-radius: 12px;
 	margin-right: 70px;
 	box-shadow: 4px 4px 12px 0 rgba(255, 255, 255, 0);
-	flex-grow: 1;
 }
 
 .block h1 {

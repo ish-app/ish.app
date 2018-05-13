@@ -11,27 +11,18 @@ layout: default
 			<h2>The Linux shell on iOS.</h2>
 		</div>
 
-		<div class="block">
-			<h1>Get {{ site.title }}</h1>
-			<h3><i>Get {{ site.title }} via TestFlight!<br />
-			Enter your email, and we'll get back to you.</i></h3>
-			<form>
-				<input type="text" name="email" placeholder="Email">
-				<br />
-				<input type="submit" value="Send">
-			</form>
-			<hr />
-			<h2><a href="https://github.com/tbodt/ish">Visit iSH on GitHub</a></h2>
-		</div>
-
 		<div class="photo-container">
 			<img class="iphone" src="assets/front-iphonex.png" />
 		</div>
 	</div>
+	<form>
+		<input name="email" type="text" placeholder="Email">
+		<input type="submit" title="Search" value="Submit"></input>
+	</form>
+	<iframe class="github" src="https://ghbtns.com/github-btn.html?user=tbodt&repo=ish&type=star&count=true&size=large" frameborder="0" scrolling="0" width="120px" height="30px"></iframe><br />
 	<i class="material-icons">
 		<a href="#info" class="downarrow">keyboard_arrow_down</a>
 	</i>
-	
 </section>
 
 <section id="info" class="lightsec">
@@ -41,6 +32,10 @@ layout: default
 		{{ site.title }} is a project to get a Linux shell running on iOS. It is currently a usermode x86 emulator for Linux.
 	</h3>
 	<img class="ipad" src="assets/front-ipad.png" />
+	<h3>
+		{{ site.title }} gives you the ability to run Linux applications and programs on iOS.
+		<!-- This was cheesy. -->
+	</h3>
 </section>
 
 <section id="get">

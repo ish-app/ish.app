@@ -1,0 +1,120 @@
+/* Main stylesheet for ish.app */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+body {
+	background: linear-gradient(170deg, #29223f, #181425);
+	color: #f1f1f1;
+	font-family: 'Open Sans',Roboto,sans-serif;
+	text-align: center;
+	margin: 0;
+}
+
+/* Font & Texts */
+h1, h2, h3 {
+	font-weight: lighter;
+}
+
+a {
+	color: #6a4cce;
+	text-decoration: none;
+	transition: .5s color;
+}
+
+a:hover {
+	color: #4286f4;
+}
+
+/* Front page container. */
+.front-container {
+	display: flex;
+	align-items: center;
+	padding: 48px;
+	margin-left: 5%;
+	margin-right: 5%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	justify-content: center;
+}
+
+/* The large iSH icon. */
+.icon {
+	height: auto;
+	width: 200px;
+	border-radius: 12%;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Primary text on front page */
+.fronttext {
+	text-align: left;
+	flex-grow: 1;
+	margin-left: 10px;
+}
+
+.fronttext h1 {
+	font-size: 48px;
+	margin: 0;
+}
+
+/* Photo container for main photo */
+.photo-container {
+	display: flex;
+	align-items: center;
+	width: 20%;
+}
+
+/* iPhone X image */
+.iphone {
+	height: auto;
+	width: 100%;
+}
+
+.home {
+	top: 0;
+	height: 100vh;
+	position: relative;
+}
+
+/* Mobile optimisations */
+@media only screen and (max-width: 700px) {
+	body {
+		text-align: center;
+		padding-top: 24%;
+	}
+
+	.front-container {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.icon {
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		border-radius: 12%;
+		border: 2px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.fronttext {
+		text-align: center;
+		flex-grow: 1;
+		margin: 0;
+	}
+
+	.photo-container {
+		display: flex;
+		align-items: center;
+		width: 75%;
+	}
+
+	.iphone {
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+}
+
+/*thanks matt*/

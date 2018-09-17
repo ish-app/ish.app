@@ -1,16 +1,17 @@
 /* Main stylesheet for ish.app */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 body {
 	background: #161616;
-	color: #d1d1d1;
-	font-family: Roboto,Helvetica,sans-serif;
+	color: #f1f1f1;
+	font-family: 'Helvetica Neue','Open Sans',Roboto,Helvetica,sans-serif;
 	text-align: center;
 	margin: 0;
 }
 
 /* Font & Texts */
 h1, h2, h3 {
-	font-weight: 200;
+	font-weight: lighter;
 }
 
 a {
@@ -23,15 +24,6 @@ a:hover {
 	color: #4286f4;
 }
 
-/* iSH icon in header */
-.headerimg {
-	height: 64px;
-	width: 64px;
-	border-radius: 16px;
-	border: 2px solid #d1d1d1;
-	margin: 16px;
-}
-
 /* Neat horizontal divider */
 hr {
 	border: 0;
@@ -42,7 +34,7 @@ hr {
 /* Header */
 header {
 	box-shadow: 0 0 0px black;
-	height: 96px;
+	height: 80px;
 	width: 100%;
 	background-color: #262626;
 	line-height: 32px;
@@ -66,7 +58,7 @@ nav a {
 	border: solid rgba(255, 255, 255, 0.1);
 	border-width: 3px 0;
 	color: inherit;
-	padding: 16px;
+	padding: 12px;
 	width: 100px;
 	transition: background .2s ease-in-out, box-shadow .4s, color .5s, border 1s;
 	float: right;
@@ -110,10 +102,12 @@ input[type=text]:focus {
 	display: flex;
 	align-items: center;
 	padding: 48px;
-	margin-top: 72px;
 	margin-left: 5%;
 	margin-right: 5%;
-	height: 70%;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: center;
 }
 
 /* The large iSH icon. */
@@ -121,7 +115,7 @@ input[type=text]:focus {
 	height: auto;
 	width: 200px;
 	border-radius: 16px;
-	border: 2px solid #d1d1d1;
+	border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Primary text on front page */
@@ -139,7 +133,7 @@ input[type=text]:focus {
 .photo-container {
 	display: flex;
 	align-items: center;
-	width: 300px;
+	width: 20%;
 }
 
 /* iPhone X image */
@@ -152,7 +146,6 @@ input[type=text]:focus {
 .ipad {
 	height: auto;
 	width: 50%;
-	padding-bottom: 12px;
 }
 
 /* Objects to be hidden on
@@ -163,13 +156,27 @@ input[type=text]:focus {
 
 /* The arrow pointing down */
 .downarrow {
-	bottom: 0;
+	bottom: 5px;
 	font-size: 92px !important;
+}
+
+.material-icons {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.home {
+	background: linear-gradient(170deg, #29223f, #181425);
+	top: 0;
+	height: 100vh;
+	position: relative;
 }
 
 /* Light sections */
 .lightsec {
-	background-color: #d1d1d1;
+	background-color: #f1f1f1;
 	color: #161616;
 	padding: 1px;
 }
@@ -186,7 +193,7 @@ input[type=text]:focus {
 
 /* Dividers */
 .divider {
-	border-left: 1px solid #323232;
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Flexdivider creates space to separate objects in flex */

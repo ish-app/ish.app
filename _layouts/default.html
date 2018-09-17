@@ -19,7 +19,6 @@
 	</head>
 	<body>
 		<header>
-			<img src="assets/icon.png" class="headerimg" />
 			<div class=flexdivider></div>
 			<nav>
 				<a class="hidden" href="#home">Home</a>
@@ -28,5 +27,9 @@
 			</nav>
 		</header>
 		{{ content }}
+		<div> <!-- Footer -->
+			<hr />
+			<h3>{{ site.title }}, 2017-{{ 'now' | date: "%Y" }}</h3>
+		</div>
 	</body>
 </html>

@@ -57,6 +57,14 @@ a:hover {
     margin: 0;
 }
 
+.fronttext svg {
+    width: 1.5em;
+    height: 1.5em;
+    color: #f1f1f1;
+    fill: currentColor;
+    vertical-align: text-top;
+}
+
 /* Photo container for main photo */
 .photo-container {
     display: flex;

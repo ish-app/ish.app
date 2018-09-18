@@ -12,7 +12,7 @@ $(window).on("load", function() {
         e.preventDefault();
 
         root.animate({
-            scrollTop: $(href).offset().top - 80 - 11
+            scrollTop: $(href).offset().top - 80
         }, "slow");
     });
 });

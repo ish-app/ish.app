@@ -135,7 +135,7 @@ input[type=text]:focus {
 .photo-container {
     display: flex;
     align-items: center;
-    max-height: 100%;
+    height: 100%;
 }
 
 /* iPhone X image */
@@ -196,6 +196,9 @@ input[type=text]:focus {
 .flexdivider {
     width: 90%;
 }
+
+/* Footer */
+.footer {}
 
 /* Mobile optimisations */
 @media only screen and (max-width: 700px) {

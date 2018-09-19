@@ -136,7 +136,7 @@ input[type=text]:focus {
 .iphone {
     height: 100%;
     min-height: 20em;
-    max-height: 60em;
+    max-height: 40em;
     width: auto;
 }
 
@@ -211,9 +211,11 @@ input[type=text]:focus {
         top: 0;
         left: 0;
         width: calc(100% + 6em);
-        height: calc(100% + 6em);
-        opacity: .05;
+        height: calc(100% + 9em);
+        opacity: .2;
         margin: -3em;
+        margin-top: -6em;
+        filter: blur(2px);
         background-image: url(/assets/front-iphonex.png);
         background-size: cover;
         z-index: 0;

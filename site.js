@@ -22,7 +22,7 @@ $(window).on("load", function() {
         if (nextKonamiInput !== -1 && ev.keyCode === konamiCode[nextKonamiInput]) {
             nextKonamiInput += 1;
             if (nextKonamiInput === konamiCode.length) {
-                $('.home').css('background', 'url(https://pbs.twimg.com/profile_banners/2540435814/1537379284/1500x500)').css('background-size', 'cover');
+                $('.home').css('background', 'url(https://pbs.twimg.com/profile_banners/2540435814/1537379284/1500x500)').css('background-size', 'cover').css('background-position', 'center');
                 nextKonamiInput = -1;
             }
         } else {

@@ -101,20 +101,15 @@ input[type=text]:focus {
 .front-container {
     display: flex;
     align-items: center;
-    padding: 48px;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 60%;
+    margin: 48px 5%;
+    height: 100%;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     justify-content: center;
 }
 
 /* The large iSH icon. */
 .icon {
-    height: auto;
-    width: 200px;
+    height: 10em;
     border-radius: 16px;
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
@@ -128,19 +123,18 @@ input[type=text]:focus {
 
 .fronttext h1 {
     font-size: 48px;
-    margin: 0;
+    line-height: 48px;
 }
 
-/* Photo container for main photo */
-.photo-container {
-    display: flex;
-    align-items: center;
-    height: 100%;
+.fronttext h1, .fronttext h2 {
+    margin: 0;
 }
 
 /* iPhone X image */
 .iphone {
     height: 100%;
+    min-height: 20em;
+    max-height: 40em;
     width: auto;
 }
 
@@ -168,6 +162,7 @@ input[type=text]:focus {
     top: 0;
     height: 100vh;
     position: relative;
+    overflow-y: hidden;
 }
 
 /* Light sections */
@@ -203,13 +198,35 @@ input[type=text]:focus {
 /* Mobile optimisations */
 @media only screen and (max-width: 700px) {
     .front-container {
-        flex-wrap: wrap;
-        margin-left: 0;
-        margin-top: 8%;
+        flex-direction: column;
+        margin: 0;
+    }
+    .front-container::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% + 6em);
+        height: calc(100% + 6em);
+        opacity: .05;
+        margin: -3em;
+        background-image: url(/assets/front-iphonex.png);
+        background-size: cover;
+        z-index: 0;
     }
     .icon {
-        width: 50%;
-        margin-bottom: 20px;
+      z-index: 2;
+      align-self: center;
+    }
+    .iphone {
+      display: none;
+    }
+    .fronttext {
+      flex-grow: 0;
+      text-align: center;
+      margin: .1em 0 0 0;
+      z-index: 2;
     }
     .photo {
         max-width: 100%;

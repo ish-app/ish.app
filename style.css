@@ -103,7 +103,7 @@ input[type=text]:focus {
     align-items: center;
     margin: 48px auto;
     width: 90%;
-    max-width: 80em;
+    max-width: 60em;
     height: 100%;
     position: relative;
     justify-content: center;
@@ -230,7 +230,7 @@ input[type=text]:focus {
     .fronttext {
       flex-grow: 0;
       text-align: center;
-      margin: .1em 0 0 0;
+      margin: 2em 0 0 0;
       z-index: 2;
     }
     .photo {

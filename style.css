@@ -192,8 +192,16 @@ input[type=text]:focus {
 }
 
 #get ul {
-  min-width: 40vw;
-  text-align: left;
+    min-width: 40vw;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#get ul li:before {
+    content: '-  ';
+    white-space: pre;
 }
 
 /* Dividers */

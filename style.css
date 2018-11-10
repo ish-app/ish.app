@@ -103,10 +103,11 @@ input[type=text]:focus {
     align-items: center;
     margin: 48px auto;
     width: 90%;
-    max-width: 60em;
+    max-width: 70em;
     height: 100%;
     position: relative;
     justify-content: center;
+    margin-top: 0;
 }
 
 /* The large iSH icon. */
@@ -129,7 +130,16 @@ input[type=text]:focus {
 }
 
 .fronttext h1, .fronttext h2 {
-    margin: 0;
+    margin: 10px;
+}
+
+/* The GitHub icon */
+.fronttext svg {
+    width: 1.5em;
+    height: 1.5em;
+    color: #f1f1f1;
+    fill: currentColor;
+    vertical-align: text-top;
 }
 
 /* iPhone X image */
@@ -221,7 +231,7 @@ input[type=text]:focus {
         z-index: 0;
     }
     .icon {
-      z-index: 2;
+      z-index: 1;
       align-self: center;
     }
     .iphone {
@@ -231,7 +241,7 @@ input[type=text]:focus {
       flex-grow: 0;
       text-align: center;
       margin: 2em 0 0 0;
-      z-index: 2;
+      z-index: 1;
     }
     .photo {
         max-width: 100%;
@@ -241,5 +251,6 @@ input[type=text]:focus {
     }
     .ipad {
         width: 95%;
+        height: auto;
     }
 }

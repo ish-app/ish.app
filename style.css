@@ -185,8 +185,6 @@ input[type=text]:focus {
 }
 
 /* "Info" and "Getting iSH" sections */
-#info {
-}
 
 #info h1,
 #get h1 {
@@ -250,6 +248,12 @@ input[type=text]:focus {
     vertical-align: text-top;
 }
 
+.bottomtext {
+    text-align: left;
+    margin: 0 auto;
+    width: 50em;
+}
+
 /* Dividers */
 .divider {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -260,17 +264,14 @@ input[type=text]:focus {
     width: 90%;
 }
 
+/* This is basically just a vertical divider */
 .midline {
     border-left: 1px solid #4f4f4f;
-    height: 375px;
-    vertical-align: middle;
+    height: 200px;
     margin: 30px;
     margin-top: 0;
     display: inline-block;
 }
-
-/* Footer */
-.footer {}
 
 /* Mobile optimisations */
 @media only screen and (max-width: 700px) {

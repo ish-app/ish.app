@@ -1,17 +1,18 @@
 /* Main stylesheet for ish.app */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 
 body {
     background: #161616;
     color: #f1f1f1;
-    font-family: 'Helvetica Neue','Open Sans',Roboto,Helvetica,sans-serif;
+    font-family: 'Helvetica Neue','Open Sans',sans-serif;
     text-align: center;
     margin: 0;
+    font-size: 1.17em;
 }
 
 /* Font & Texts */
-h1, h2, h3 {
-    font-weight: lighter;
+h1, h2, p {
+    font-weight: 300;
 }
 
 a {
@@ -92,9 +93,6 @@ input[type=submit] {
 input[type=text]:focus {
     border-bottom: 2px solid #4286f4;
     box-shadow: 4px 4px 4px 0 rgba(209, 209, 209, 0.25);
-}
-
-.github {
 }
 
 /* Front page container. */
@@ -226,17 +224,17 @@ input[type=text]:focus {
     display: inline;
 }
 
-.block h2 {
+.blue {
     color: #1a76ee;
 }
 
-.block img {
+.hoverscale {
     width: 30%;
     height: auto;
     transition: .4s transform;
 }
 
-.block img:hover {
+.hoverscale:hover {
     transform: scale(1.1);
 }
 
@@ -245,13 +243,12 @@ input[type=text]:focus {
     height: 5em;
     color: #f1f1f1;
     fill: currentColor;
-    vertical-align: text-top;
 }
 
 .bottomtext {
     text-align: left;
     margin: 0 auto;
-    width: 50em;
+    width: 42em;
 }
 
 /* Dividers */
@@ -271,6 +268,11 @@ input[type=text]:focus {
     margin: 30px;
     margin-top: 0;
     display: inline-block;
+}
+
+/* Medium-sized text, not medicine. */
+.meds {
+    font-size: 22px;
 }
 
 /* Mobile optimisations */

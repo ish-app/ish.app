@@ -228,21 +228,23 @@ input[type=text]:focus {
     color: #1a76ee;
 }
 
+.block svg {
+    width: 5em;
+    height: 5em;
+    color: #f1f1f1;
+    fill: currentColor;
+    transition: .4s transform;
+}
+
 .hoverscale {
     width: 30%;
     height: auto;
     transition: .4s transform;
 }
 
-.hoverscale:hover {
+.hoverscale:hover,
+.block svg:hover {
     transform: scale(1.1);
-}
-
-.block svg {
-    width: 5em;
-    height: 5em;
-    color: #f1f1f1;
-    fill: currentColor;
 }
 
 .bottomtext {

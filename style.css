@@ -115,6 +115,16 @@ input[type=text]:focus {
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 20pt;
+}
+
+.icons a {
+    margin-left: 20px;
+}
+
 /* Primary text on front page */
 .fronttext {
     text-align: left;

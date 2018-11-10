@@ -250,7 +250,7 @@ input[type=text]:focus {
 .bottomtext {
     text-align: left;
     margin: 0 auto;
-    width: 42em;
+    max-width: 42em;
 }
 
 /* Dividers */

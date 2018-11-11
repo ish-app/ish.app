@@ -341,4 +341,7 @@ input[type=text]:focus {
         margin: 50px;
         text-align: center;
     }
+    .icons {
+        justify-content: center;
+    }
 }

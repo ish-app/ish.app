@@ -19,6 +19,7 @@ a {
     color: inherit;
     text-decoration: none;
     transition: .5s color;
+    outline: 0;
 }
 
 a:hover {

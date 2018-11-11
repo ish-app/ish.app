@@ -301,7 +301,7 @@ input[type=text]:focus {
         position: absolute;
         top: 0;
         left: 0;
-        width: calc(100% + 6em);
+        width: calc(100% + 3em);
         height: calc(100% + 9em);
         opacity: .2;
         margin: -3em;

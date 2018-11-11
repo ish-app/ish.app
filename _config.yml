@@ -16,13 +16,14 @@
 title: iSH
 # email: your-email@example.com Let's not have an email right now.
 description: >- # this means to ignore newlines until "baseurl:"
-  iSH is a project to get a Linux shell running on iOS. Currently, a usermode x86 emulator for Linux.
+  iSH is a project to get a Linux shell environment running locally on your iOS device, using a usermode x86 emulator.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ish.app" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tblodt
 github_username: tbodt
 discord: "https://discord.gg/SndDh5y"
 github: "https://github.com/tbodt/ish"
+testflight: "https://testflight.apple.com/join/97i7KM8O"
 
 # Build settings
 markdown: kramdown

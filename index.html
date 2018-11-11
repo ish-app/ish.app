@@ -7,18 +7,14 @@ layout: default
         <div class="fronttext">
             <h1>{{ site.title }}</h1>
             <h2>The Linux shell on iOS.</h2>
-            <h2>
+            <div class="icons">
                 <a href="{{ site.github }}">{% include github-icon.html %}</a>
                 <a href="{{ site.discord }}" target="_blank">{% include discord-icon.html %}</a>
-            </h2>
+                <a href="{{ site.testflight }}"><img src="/assets/testflight.png" style="height: 40px; width: auto"/></a>
+            </div>
         </div>
-        <img class="iphone" src="assets/front-iphonex.png" />
+        <img class="iphone hidden" src="assets/front-iphonex.png" />
     </div>
-    <!--<form>
-        <input name="email" type="text" placeholder="Email">
-        <input type="submit" title="Search" value="Submit"></input>
-    </form>
-    <iframe class="github" src="https://ghbtns.com/github-btn.html?user=tbodt&repo=ish&type=star&count=true&size=large" frameborder="0" scrolling="0" width="120px" height="30px"></iframe><br />-->
     <i class="material-icons">
         <a href="#info" class="downarrow">keyboard_arrow_down</a>
     </i>
@@ -43,9 +39,9 @@ layout: default
     <div class="options">
         <div class="left block">
             <p class="meds">Join the TestFlight beta!</p>
-            <p>You can get {{ site.title }} by joining the <a href="https://testflight.apple.com/join/97i7KM8O">TestFlight beta</a>.</p>
+            <p>You can get {{ site.title }} by joining the <a href="{{ site.testflight }}">TestFlight beta</a>.</p>
             <br />
-            <a href="https://testflight.apple.com/join/97i7KM8O">
+            <a href="{{ site.testflight }}">
                 <img src="/assets/testflight.png" class="hoverscale">
             </a>
         </div>

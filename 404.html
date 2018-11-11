@@ -1,6 +1,51 @@
----
-layout: default
----
-<h1>404</h1>
-<p><strong>Page not found :(</strong></p>
-<p>The requested page could not be found.</p>
+<html>
+    <head>
+        <title>iSH | 404</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+            body {
+                background: #161616;
+                color: #f1f1f1;
+                font-family: 'Helvetica Neue','Open Sans',sans-serif;
+                padding: 40px;
+                padding-top: 20px;
+                font-size: 1.17em;
+                font-weight: 300;
+            }
+
+            a { color: #85beff; text-decoration: none; transition: .5s color }
+            a:hover { color: #4286f4 }
+
+            .headerbg {
+                background: linear-gradient(275deg, #4286f4, #002f7c, #65007f);
+                background-size: 350%;
+                -webkit-animation: bg 20s ease infinite;
+                animation: bg 20s ease infinite;
+                height: 14px;
+            }
+
+            @keyframes bg {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+
+            .header {
+                width: 100%;
+                left: 0; top: 0;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="headerbg"></div>
+        </div>
+        <div>
+            <h1>404-ish</h1>
+            <p><strong>There's only darkness out here in the wild.</strong></p>
+            <p>It's sadly true, the requested page was not found.. :(<br />
+            <a href="https://ish.app">Click here to go home</a>.</p>
+        </div>
+    </body>
+</html>

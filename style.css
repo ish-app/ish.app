@@ -261,6 +261,8 @@ input[type=text]:focus {
 .bottomtext {
     text-align: left;
     margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
     max-width: 42em;
 }
 
@@ -295,22 +297,6 @@ input[type=text]:focus {
         margin: 0;
         width: 100%;
     }
-    .front-container::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: calc(100% + 3em);
-        height: calc(100% + 9em);
-        opacity: .2;
-        margin: -3em;
-        margin-top: -6em;
-        filter: blur(2px);
-        background-image: url(/assets/front-iphonex.png);
-        background-size: cover;
-        z-index: 0;
-    }
     .icon {
       z-index: 1;
       align-self: center;
@@ -340,6 +326,9 @@ input[type=text]:focus {
     .margin {
         margin: 50px;
         text-align: center;
+    }
+    .bottomtext {
+        padding: 0;
     }
     .icons {
         justify-content: center;

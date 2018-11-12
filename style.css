@@ -233,10 +233,6 @@ input[type=text]:focus {
     display: inline;
 }
 
-.blue {
-    color: #1a76ee;
-}
-
 .block svg {
     width: 5em;
     height: 5em;

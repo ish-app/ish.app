@@ -120,10 +120,8 @@ input[type=text]:focus {
     display: flex;
     align-items: center;
     font-size: 20pt;
-}
-
-.icons a {
-    margin-left: 20px;
+    max-width: 310px;
+    justify-content: space-evenly;
 }
 
 /* Primary text on front page */
@@ -153,10 +151,9 @@ input[type=text]:focus {
 
 /* iPhone X image */
 .iphone {
-    height: 100%;
-    min-height: 20em;
-    max-height: 40em;
-    width: auto;
+    height: auto;
+    max-width: 30vw;
+    max-height: 75vh;
 }
 
 /* iPad photo */

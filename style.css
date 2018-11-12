@@ -1,6 +1,4 @@
 /* Main stylesheet for ish.app */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
-
 body {
     background: #161616;
     color: #f1f1f1;
@@ -38,7 +36,6 @@ header {
     box-shadow: 0 0 0px black;
     height: 80px;
     width: 100%;
-    background-color: #262626;
     line-height: 32px;
     background: rgba(38, 38, 38, 0);
     left: 0;
@@ -191,7 +188,6 @@ input[type=text]:focus {
 }
 
 /* "Info" and "Getting iSH" sections */
-
 #info h1,
 #get h1 {
     font-size: 36px;
@@ -231,10 +227,6 @@ input[type=text]:focus {
     padding: 12px;
     margin-bottom: 12px;
     display: inline;
-}
-
-.blue {
-    color: #1a76ee;
 }
 
 .block svg {
@@ -287,6 +279,8 @@ input[type=text]:focus {
 .meds {
     font-size: 22px;
 }
+
+.orange { color: #e87460 !important }
 
 /* Mobile optimisations */
 @media only screen and (max-width: 700px) {

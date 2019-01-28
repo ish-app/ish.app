@@ -1,4 +1,4 @@
-# ish.app
+# [ish.app](https://ish.app)
 The iSH website.
 
 Built using Jekyll.

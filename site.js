@@ -22,7 +22,7 @@ $(window).on("load", function() {
         if (nextKonamiInput !== -1 && ev.keyCode === konamiCode[nextKonamiInput]) {
             nextKonamiInput += 1;
             if (nextKonamiInput === konamiCode.length) {
-                $('.home').css('background', 'url(/assets/noogler.png)').css('background-size', 'cover').css('background-position', 'center');
+                $('.home').css('background', 'url(/assets/noogler.jpg)').css('background-size', 'cover').css('background-position', 'center');
                 nextKonamiInput = -1;
             }
         } else {

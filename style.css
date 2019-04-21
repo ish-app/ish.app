@@ -210,10 +210,21 @@ input[type=text]:focus {
     height: 50%;
     background-color: #262626;
     color: #f1f1f1;
-    border-radius: 5px;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.75);
     padding: 12px;
     margin-bottom: 12px;
+}
+
+.infobox .meds,
+.infobox p {
+    margin: 4px;
+}
+
+.boxpict {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px
 }
 
 /* "Info" and "Getting iSH" sections */

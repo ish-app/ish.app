@@ -26,11 +26,35 @@ layout: default
     <p class="meds">
         {{ site.title }} is a project to get a Linux shell environment running locally on your iOS device, using a usermode x86 emulator.<br />
     </p>
-    <img class="ipad" src="assets/front-ipad.png" alt="iSH running on an iPad" />
-    <p class="meds">
-        {{ site.title }} gives you the ability to run Linux applications and programs on iOS.
-        <!-- This was cheesy. -->
-    </p>
+    <div class="expl">
+        <div>
+            <img class="ipad" src="assets/front-ipad.png" alt="iSH running on an iPad" />
+            <p>{{ site.title }} gives you the ability to run Linux applications and programs on iOS.</p>
+        </div>
+        <div class="info">
+            <div class="infobox">
+                <p class="meds">Alpine</p>
+                <p>
+                    You have access to the Alpine package manager in {{ site.title }}.
+                    <br />
+                    You can install programs with <code>apk add &#60;name&#62;</code>.
+                    <br />
+                    Let's have a look:
+                </p>
+                <img class="boxpict" src="assets/iphone-alpine.png" alt="apk installing Bash on an iPhone" />
+                <a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management">Learn more</a></p>
+            </div>
+            <div class="infobox">
+                <p class="meds">The Keyboard</p>
+                <p>
+                    {{ site.title }}'s keyboard addition makes navigation easier.
+                    <br />
+                    Here's what the buttons do:
+                </p>
+                <img class="boxpict" src="assets/iphone-keyboard.png" alt="The iSH keyboard addition on an iPhone" />
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="get">

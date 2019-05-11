@@ -14,7 +14,7 @@ h1, h2, p {
 }
 
 a {
-    color: inherit;
+    color: #85beff;
     text-decoration: none;
     transition: .5s color;
     outline: 0;
@@ -156,13 +156,14 @@ input[type=text]:focus {
 /* iPad photo */
 .ipad {
     height: auto;
-    width: 50%;
+    width: 80%;
 }
 
 /* The arrow pointing down */
 .downarrow {
     bottom: 5px;
     font-size: 92px !important;
+    color: white;
 }
 
 .material-icons {
@@ -180,11 +181,44 @@ input[type=text]:focus {
     overflow-y: hidden;
 }
 
-/* Light sections */
+/* Light section */
 .lightsec {
     background-color: #f1f1f1;
     color: #161616;
     padding: 1px;
+}
+
+.expl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infobox {
+    width: 70%;
+    background-color: #262626;
+    color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.75);
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.infobox .meds,
+.infobox p {
+    margin: 4px;
+}
+
+.boxpict {
+    width: 100%;
+    height: auto;
 }
 
 /* "Info" and "Getting iSH" sections */
@@ -207,15 +241,6 @@ input[type=text]:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#get a {
-    color: #85beff;
-    transition: .5s color;
-}
-
-#get a:hover {
-    color: #4286f4;
 }
 
 .block {
@@ -269,9 +294,8 @@ input[type=text]:focus {
 /* This is basically just a vertical divider */
 .midline {
     border-left: 1px solid #4f4f4f;
-    height: 200px;
+    height: 220px;
     margin: 30px;
-    margin-top: 0;
     display: inline-block;
 }
 
@@ -312,7 +336,7 @@ input[type=text]:focus {
         width: 95%;
         height: auto;
     }
-    .options {
+    .options, .expl {
         flex-direction: column;
     }
     .margin {

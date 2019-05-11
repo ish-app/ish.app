@@ -42,7 +42,8 @@
         {{ content }}
         <div class="footer"> <!-- Footer -->
             <hr />
-            <p class="meds">{{ site.title }}, 2017–{{ 'now' | date: "%Y" }}</p>
+            <!-- Todo: Add icons in footer for different contact methods (email/twitter/github/whatever) -->
+            <p class="meds">{{ site.title }}, &copy; 2017-{{ 'now' | date: "%Y" }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         </div>
     </body>
 </html>

@@ -194,10 +194,6 @@ input[type=text]:focus {
     justify-content: center;
 }
 
-.explbox {
-    flex: 1;
-}
-
 .info {
     display: flex;
     justify-content: center;

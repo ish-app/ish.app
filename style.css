@@ -89,7 +89,7 @@ nav a:hover {
 /* The large iSH icon. */
 .icon {
     height: 10em;
-    border-radius: 16px;
+    border-radius: 32px;
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
 

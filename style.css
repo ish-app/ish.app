@@ -166,6 +166,17 @@ input[type=text]:focus {
     color: white;
 }
 
+.anidiv {
+    animation: bounce 2s ease-out .5s;
+}
+
+@keyframes bounce {
+    0% { opacity: 0; transform: translateY(-72px); }
+    20% { transform: translateY(-48px); }
+    45% { opacity: 1; transform: translateY(-56px); }
+    100% { transform: translateY(-48px); }
+}
+
 .material-icons {
     position: absolute;
     right: 0;

@@ -2,7 +2,8 @@
 body {
     background: #161616;
     color: #f1f1f1;
-    font-family: 'Helvetica Neue','Open Sans',sans-serif;
+    /* Noto Sans is Firefox default, looks better than sans-serif */
+    font-family: 'Ubuntu','Noto Sans',sans-serif;
     text-align: center;
     margin: 0;
     font-size: 1.17em;
@@ -10,7 +11,7 @@ body {
 
 /* Font & Texts */
 h1, h2, p {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 a {

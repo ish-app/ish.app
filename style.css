@@ -167,21 +167,27 @@ input[type=text]:focus {
 }
 
 .anidiv {
-    animation: bounce 2s ease-out .5s;
-}
-
-@keyframes bounce {
-    0% { opacity: 0; transform: translateY(-72px); }
-    20% { transform: translateY(-48px); }
-    45% { opacity: 1; transform: translateY(-56px); }
-    100% { transform: translateY(-48px); }
-}
-
-.material-icons {
+    animation: bounce 2s ease-out;
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(-24px); }
+    20% { transform: translateY(0px); }
+    45% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+.material-icons {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .home {

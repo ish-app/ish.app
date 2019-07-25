@@ -12,7 +12,7 @@ $(window).on("load", function() {
         }
         e.preventDefault();
 
-        if (window.screen.availHeight < 400) {
+        if (window.screen.height < 400) {
             hlimit = 0;
         }
 

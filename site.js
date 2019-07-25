@@ -3,6 +3,7 @@ jQuery.easing.def = "easeInOutQuad";
 $(window).on("load", function() {
     let body = $(document.body);
     let root = $("html, body");
+    let hlimit = 80;
 
     $("a[href^=\"#\"]").click(function(e) {
         let href = $.attr(this, "href");
@@ -11,8 +12,12 @@ $(window).on("load", function() {
         }
         e.preventDefault();
 
+        if (window.screen.availHeight < 400) {
+            hlimit = 0;
+        }
+
         root.animate({
-            scrollTop: $(href).offset().top - 80
+            scrollTop: $(href).offset().top - hlimit
         }, "slow");
     });
 

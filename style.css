@@ -328,7 +328,7 @@ nav a:hover {
     .photo {
         max-width: 100%;
     }
-    .hidden {
+    .whidden {
         display: none;
     }
     .ipad {
@@ -344,5 +344,11 @@ nav a:hover {
     }
     .bottomtext {
         padding: 0;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .hhidden {
+        display: none;
     }
 }

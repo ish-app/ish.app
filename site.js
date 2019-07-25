@@ -12,7 +12,7 @@ $(window).on("load", function() {
         }
         e.preventDefault();
 
-        if (window.screen.height < 400) {
+        if(!$('#headr').is(':visible')) {
             hlimit = 0;
         }
 

@@ -148,7 +148,7 @@ nav a:hover {
 }
 
 .anidiv {
-    animation: bounce 2s ease-out;
+    animation: bounce 2s ease-out 1.5s;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -156,9 +156,10 @@ nav a:hover {
 }
 
 @keyframes bounce {
-    0% { transform: translateY(-24px); }
-    20% { transform: translateY(0px); }
-    45% { transform: translateY(-12px); }
+    0% { transform: translateY(0px); }
+    20% { transform: translateY(-24px); }
+    40% { transform: translateY(0px); }
+    55% { transform: translateY(-12px); }
     100% { transform: translateY(0px); }
 }
 

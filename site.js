@@ -3,7 +3,7 @@ jQuery.easing.def = "easeInOutQuad";
 $(window).on("load", function() {
     let body = $(document.body);
     let root = $("html, body");
-    let hlimit = 80;
+    let hlimit = 64;
 
     $("a[href^=\"#\"]").click(function(e) {
         let href = $.attr(this, "href");

@@ -35,7 +35,7 @@ hr {
 /* Header */
 header {
     box-shadow: 0 0 0px black;
-    height: 80px;
+    height: 64px;
     width: 100%;
     line-height: 32px;
     background: rgba(38, 38, 38, 0);
@@ -58,7 +58,7 @@ nav a {
     border: solid rgba(255, 255, 255, 0.1);
     border-width: 3px 0;
     color: inherit;
-    padding: 12px;
+    padding: 8px;
     width: 100px;
     transition: background .2s ease-in-out, box-shadow .4s, color .5s, border 1s;
     float: right;

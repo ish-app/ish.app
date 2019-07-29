@@ -2,7 +2,8 @@
 body {
     background: #161616;
     color: #f1f1f1;
-    font-family: 'Helvetica Neue','Open Sans',sans-serif;
+    /* Noto Sans is Firefox default, looks better than sans-serif */
+    font-family: 'Ubuntu','Noto Sans',sans-serif;
     text-align: center;
     margin: 0;
     font-size: 1.17em;
@@ -34,7 +35,7 @@ hr {
 /* Header */
 header {
     box-shadow: 0 0 0px black;
-    height: 80px;
+    height: 64px;
     width: 100%;
     line-height: 32px;
     background: rgba(38, 38, 38, 0);
@@ -57,7 +58,7 @@ nav a {
     border: solid rgba(255, 255, 255, 0.1);
     border-width: 3px 0;
     color: inherit;
-    padding: 12px;
+    padding: 8px;
     width: 100px;
     transition: background .2s ease-in-out, box-shadow .4s, color .5s, border 1s;
     float: right;
@@ -71,26 +72,6 @@ nav a:hover {
     border: 3px solid white;
     border-width: 3px 0;
     color: white;
-}
-
-/* Inputs */
-input[type=text] {
-    width: 400px;
-    font-size: 20px;
-    padding: 10px;
-    border: none;
-    border-bottom: 2px solid #161616;
-    transition: 0.5s;
-    border-radius: 4px;
-    height: 48px;
-}
-
-input[type=submit] {
-}
-
-input[type=text]:focus {
-    border-bottom: 2px solid #4286f4;
-    box-shadow: 4px 4px 4px 0 rgba(209, 209, 209, 0.25);
 }
 
 /* Front page container. */
@@ -109,7 +90,7 @@ input[type=text]:focus {
 /* The large iSH icon. */
 .icon {
     height: 10em;
-    border-radius: 16px;
+    border-radius: 32px;
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -166,11 +147,22 @@ input[type=text]:focus {
     color: white;
 }
 
-.material-icons {
+.anidiv {
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+/* In memory of the bounce */
+
+.material-icons {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .home {
@@ -329,7 +321,7 @@ input[type=text]:focus {
     .photo {
         max-width: 100%;
     }
-    .hidden {
+    .whidden {
         display: none;
     }
     .ipad {
@@ -346,7 +338,10 @@ input[type=text]:focus {
     .bottomtext {
         padding: 0;
     }
-    .icons {
-        justify-content: center;
+}
+
+@media only screen and (max-height: 400px) {
+    .hhidden {
+        display: none;
     }
 }

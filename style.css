@@ -296,8 +296,6 @@ nav a:hover {
     font-size: 22px;
 }
 
-.orange { color: #e87460 !important }
-
 /* Mobile optimisations */
 @media only screen and (max-width: 700px) {
     .front-container {

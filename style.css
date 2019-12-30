@@ -148,13 +148,20 @@ nav a:hover {
 }
 
 .anidiv {
+    animation: bounce 2s ease-in-out 1.5s;
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
 }
 
-/* In memory of the bounce */
+@keyframes bounce {
+    0% { transform: translateY(0px); }
+    20% { transform: translateY(-24px); }
+    40% { transform: translateY(0px); }
+    55% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
 
 .material-icons {
     animation: fadeIn 1s ease-out;

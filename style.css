@@ -102,6 +102,23 @@ nav a:hover {
     justify-content: space-evenly;
 }
 
+.thetestflightbutton {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    background: #fff;
+    width: 170px;
+    height: 40px;
+    color: #000;
+}
+
+.tftext {
+    text-align: left;
+    flex-grow: 1;
+    margin-left: 0.4em;
+    font-size: 20px
+}
+
 /* Primary text on front page */
 .fronttext {
     text-align: left;

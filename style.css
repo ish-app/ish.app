@@ -110,13 +110,18 @@ nav a:hover {
     width: 170px;
     height: 40px;
     color: #000;
+    transition: all .2s ease-in-out;
 }
 
 .tftext {
     text-align: left;
     flex-grow: 1;
     margin-left: 0.4em;
-    font-size: 20px
+    font-size: 20px;
+}
+
+.thetestflightbutton:hover {
+    transform: scale(1.03);
 }
 
 /* Primary text on front page */

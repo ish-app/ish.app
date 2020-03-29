@@ -102,6 +102,28 @@ nav a:hover {
     justify-content: space-evenly;
 }
 
+.thetestflightbutton {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    background: #fff;
+    width: 170px;
+    height: 40px;
+    color: #000;
+    transition: all .2s ease-in-out;
+}
+
+.tftext {
+    text-align: left;
+    flex-grow: 1;
+    margin-left: 0.4em;
+    font-size: 20px;
+}
+
+.thetestflightbutton:hover {
+    transform: scale(1.03);
+}
+
 /* Primary text on front page */
 .fronttext {
     text-align: left;
@@ -148,13 +170,20 @@ nav a:hover {
 }
 
 .anidiv {
+    animation: bounce 2s ease-in-out 1.5s;
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
 }
 
-/* In memory of the bounce */
+@keyframes bounce {
+    0% { transform: translateY(0px); }
+    20% { transform: translateY(-24px); }
+    40% { transform: translateY(0px); }
+    55% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
 
 .material-icons {
     animation: fadeIn 1s ease-out;
@@ -166,7 +195,7 @@ nav a:hover {
 }
 
 .home {
-    background: linear-gradient(170deg, #29223f, #181425);
+    background: linear-gradient(170deg, #20233c, #0f1121);
     top: 0;
     height: 100vh;
     position: relative;

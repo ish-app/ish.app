@@ -8,9 +8,14 @@ layout: default
             <h1>{{ site.title }}</h1>
             <h2>The Linux shell on iOS.</h2>
             <div class="icons">
+                <a href="{{ site.testflight }}">
+                    <div class="thetestflightbutton">
+                        <img src="/assets/testflight.png" style="height: 40px; width: auto"/>
+                        <div class="tftext">Get {{ site.title }} beta</div>
+                    </div>
+                </a>
                 <a href="{{ site.github }}">{% include github-icon.html %}</a>
                 <a href="{{ site.discord }}" target="_blank">{% include discord-icon.html %}</a>
-                <a href="{{ site.testflight }}"><img src="/assets/testflight.png" style="height: 40px; width: auto"/></a>
             </div>
         </div>
         <img class="iphone whidden" src="assets/front-iphone.png" alt="iSH running on an iPhone"/>

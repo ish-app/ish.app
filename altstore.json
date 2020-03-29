@@ -1,0 +1,27 @@
+---
+---
+{%- assign release = site.github.latest_release -%}
+{
+    "name": {{ site.title | jsonify }},
+    "identifier": "app.ish.iSH",
+    "apps": [
+        {
+            "bundleIdentifier": "app.ish.iSH",
+            "name": "iSH",
+            "developerName": "Theodore Dubois and contributors",
+            "iconURL": {{ "/assets/icon.png" | absolute_url | jsonify }},
+            "tintColor": "000000",
+            "subtitle": {{ site.github.project_tagline | jsonify }},
+            "localizedDescription": {{ site.description | jsonify }},
+            "screenshotURLs": [
+                {{ "/assets/front-iphone.png" | absolute_url | jsonify }}
+            ],
+            "version": {{ release.name | jsonify }},
+            "versionDate": {{ release.created_at | date_to_xmlschema | jsonify }},
+            "versionDescription": {{ release.body | jsonify }},
+            "downloadURL": {{ release.assets[0].browser_download_url | jsonify }},
+            "size": {{ release.assets[0].size | jsonify }}
+        }
+    ],
+    "userInfo": {}
+}

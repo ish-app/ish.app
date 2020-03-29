@@ -1,38 +1,19 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: iSH
-# email: your-email@example.com Let's not have an email right now.
-description: >- # this means to ignore newlines until "baseurl:"
-  iSH is a project to get a Linux shell environment running locally on your iOS device, using a usermode x86 emulator.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ish.app" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: tblodt
-github_username: tbodt
 email: tbodt@ish.app
-discord: "https://discord.gg/SndDh5y"
-github: "https://github.com/ish-app/ish"
-testflight: "https://testflight.apple.com/join/97i7KM8O"
-reddit: "https://ish.reddit.com"
-twitter: "https://twitter.com/iSH_app"
+description: >-
+  iSH is a project to get a Linux shell environment running locally on your iOS device, using a usermode x86 emulator.
+url: "https://ish.app"
+baseurl: ""
 
-# Build settings
+links:
+    discord: "https://discord.gg/SndDh5y"
+    github: "https://github.com/ish-app/ish"
+    testflight: "https://testflight.apple.com/join/97i7KM8O"
+    reddit: "https://ish.reddit.com"
+    twitter: "https://twitter.com/iSH_app"
+
+repository: ish-app/ish # for jekyll/github-metadata
 markdown: kramdown
-plugins:
-  - jekyll-feed
-
 exclude:
   - Gemfile
   - Gemfile.lock

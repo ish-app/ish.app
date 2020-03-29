@@ -8,14 +8,14 @@ layout: default
             <h1>{{ site.title }}</h1>
             <h2>The Linux shell on iOS.</h2>
             <div class="icons">
-                <a href="{{ site.testflight }}">
+                <a href="{{ site.links.testflight }}">
                     <div class="thetestflightbutton">
                         <img src="/assets/testflight.png" style="height: 40px; width: auto"/>
                         <div class="tftext">Get {{ site.title }} beta</div>
                     </div>
                 </a>
-                <a href="{{ site.github }}">{% include github-icon.html %}</a>
-                <a href="{{ site.discord }}" target="_blank">{% include discord-icon.html %}</a>
+                <a href="{{ site.links.github }}">{% include github-icon.html %}</a>
+                <a href="{{ site.links.discord }}" target="_blank">{% include discord-icon.html %}</a>
             </div>
         </div>
         <img class="iphone whidden" src="assets/front-iphone.png" alt="iSH running on an iPhone"/>
@@ -68,23 +68,23 @@ layout: default
     <div class="options">
         <div class="left block">
             <p class="meds">Join the TestFlight beta!</p>
-            <p>You can get {{ site.title }} by joining the <a href="{{ site.testflight }}">TestFlight beta</a>.</p>
+            <p>You can get {{ site.title }} by joining the <a href="{{ site.links.testflight }}">TestFlight beta</a>.</p>
             <br />
-            <a href="{{ site.testflight }}">
+            <a href="{{ site.links.testflight }}">
                 <img src="/assets/testflight.png" class="hoverscale">
             </a>
         </div>
         <div class="midline whidden"></div>
         <div class="right block">
             <p class="meds">Contribute on GitHub</p>
-            <p>Clone {{ site.title }} from <a href="{{ site.github }}">GitHub</a>, and send a PR!</p>
+            <p>Clone {{ site.title }} from <a href="{{ site.links.github }}">GitHub</a>, and send a PR!</p>
             <br />
-            <a class="github-icon hoverscale" href="{{ site.github }}">{% include github-icon.html %}</a>
+            <a class="github-icon hoverscale" href="{{ site.links.github }}">{% include github-icon.html %}</a>
         </div>
     </div>
     <div class="bottomtext">
-        <p class="margin">Join our <a href="{{ site.discord }}">Discord server</a> if you have any questions or concerns, or you just want to chat!<br />
-            There's also a <a href="{{ site.reddit }}">subreddit</a> for discussions and a <a href="{{ site.twitter }}">Twitter</a>.</p>
+        <p class="margin">Join our <a href="{{ site.links.discord }}">Discord server</a> if you have any questions or concerns, or you just want to chat!<br />
+            There's also a <a href="{{ site.links.reddit }}">subreddit</a> for discussions and a <a href="{{ site.links.twitter }}">Twitter</a>.</p>
         <p class="margin">You can also become a <a href="https://patreon.com/tbodt">patron</a> if you would like support {{ site.title }}.<br />Donations are very much appreciated, but will never be required; the app will always be completely free.</p>
     </div>
 </section>

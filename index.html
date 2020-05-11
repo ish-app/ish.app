@@ -69,17 +69,22 @@ layout: default
         <div class="left block">
             <p class="meds">Join the TestFlight beta!</p>
             <p>You can get {{ site.title }} by joining the <a href="{{ site.links.testflight }}">TestFlight beta</a>.</p>
-            <br />
             <a href="{{ site.links.testflight }}">
                 <img src="/assets/testflight.png" class="hoverscale">
             </a>
         </div>
         <div class="midline whidden"></div>
         <div class="right block">
-            <p class="meds">Contribute on GitHub</p>
-            <p>Clone {{ site.title }} from <a href="{{ site.links.github }}">GitHub</a>, and send a PR!</p>
-            <br />
-            <a class="github-icon hoverscale" href="{{ site.links.github }}">{% include github-icon.html %}</a>
+            <p class="meds">Get {{ site.title }} on AltStore</p>
+            <p>Alternatively, get <a href="https://altstore.io">AltStore</a> and add <a href="{{ site.links.altstore }}">this source</a>!</p>
+            <a href="{{ site.links.altstore }}">
+                <img src="/assets/altstore.png" class="hoverscale">
+            </a>
+        </div>
+    </div>
+    <div class="tempextraoptions"> <!-- Have other design ideas for later :) -->
+        <div class="block outsideblock">
+            {% include github-icon.html %}<a href="{{ site.links.github }}"><div class="tftext">Build from source</div></a>
         </div>
     </div>
     <div class="bottomtext">

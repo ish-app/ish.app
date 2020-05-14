@@ -1,6 +1,6 @@
 /* Main stylesheet for ish.app */
 body {
-    background: #161616;
+    background: #161616; /* #0f0f0f? */
     color: #f1f1f1;
     /* Noto Sans is Firefox default, looks better than sans-serif */
     font-family: 'Ubuntu','Noto Sans',sans-serif;
@@ -28,7 +28,7 @@ a:hover {
 /* Neat horizontal divider */
 hr {
     border: 0;
-    border-top: 1px solid grey;
+    border-top: 1px solid #818181;
     width: 50%;
 }
 
@@ -102,6 +102,7 @@ nav a:hover {
     justify-content: space-evenly;
 }
 
+/* Fancy Get Beta button */
 .thetestflightbutton {
     display: flex;
     align-items: center;
@@ -258,29 +259,57 @@ nav a:hover {
 }
 
 .options {
-    padding-top: 20px;
+    padding: 15px 0 15px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .block {
+    display: flex;
     width: 300px;
-    height: 300px;
+    height: 260px;
     background-color: #262626;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
     padding: 12px;
-    margin-bottom: 12px;
     display: inline;
 }
 
-.block svg {
+.block img {
+    margin-top: 12px;
+}
+
+/*
+.options .block svg {
     width: 5em;
     height: 5em;
     color: #f1f1f1;
     fill: currentColor;
     transition: .4s transform;
+}
+*/
+
+/* Temporary location for the GitHub button */
+.tempextraoptions {
+    display: flex;
+    justify-content: center;
+}
+
+.outsideblock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.outsideblock svg {
+    width: 2em;
+    height: 2em;
+    color: #f1f1f1;
+    fill: currentColor;
 }
 
 .hoverscale {
@@ -297,8 +326,7 @@ nav a:hover {
 .bottomtext {
     text-align: left;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 20px 0 20px;
     max-width: 42em;
 }
 
@@ -314,7 +342,7 @@ nav a:hover {
 
 /* This is basically just a vertical divider */
 .midline {
-    border-left: 1px solid #4f4f4f;
+    border-left: 1px solid #616161;
     height: 220px;
     margin: 30px;
     display: inline-block;
@@ -323,6 +351,11 @@ nav a:hover {
 /* Medium-sized text, not medicine. */
 .meds {
     font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.footertext {
+    margin: 20px;
 }
 
 /* Mobile optimisations */
@@ -354,6 +387,16 @@ nav a:hover {
     .ipad {
         width: 95%;
         height: auto;
+    }
+    .block {
+        margin: 6px 0 6px 0;
+    }
+    .outsideblock {
+        margin: 0;
+        border-radius: 20px;
+    }
+    .options {
+        padding: 12px 0 6px 0;
     }
     .options, .expl {
         flex-direction: column;

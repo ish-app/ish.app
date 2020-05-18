@@ -10,12 +10,12 @@ layout: default
             <div class="icons">
                 <a href="{{ site.links.testflight }}">
                     <div class="thetestflightbutton">
-                        <img src="assets/testflight.png" style="height: 40px; width: auto"/>
+                        <img src="assets/testflight.png" style="height: 40px; width: auto" alt="Get iSH beta" />
                         <div class="tftext">Get {{ site.title }} beta</div>
                     </div>
                 </a>
-                <a href="{{ site.links.github }}">{% include github-icon.html %}</a>
-                <a href="{{ site.links.discord }}" target="_blank">{% include discord-icon.html %}</a>
+                <a href="{{ site.links.github }}" aria-label="iSH on GitHub">{% include github-icon.html %}</a>
+                <a href="{{ site.links.discord }}" target="_blank" aria-label="iSH on Discord">{% include discord-icon.html %}</a>
             </div>
         </div>
         <picture>
@@ -86,7 +86,7 @@ layout: default
             <p class="meds">Join the TestFlight beta!</p>
             <p>You can get {{ site.title }} by joining the <a href="{{ site.links.testflight }}">TestFlight beta</a>.</p>
             <a href="{{ site.links.testflight }}">
-                <img src="assets/testflight.png" class="hoverscale">
+                <img src="assets/testflight.png" class="hoverscale" alt="Get iSH on TestFlight">
             </a>
         </div>
         <div class="midline whidden"></div>
@@ -97,14 +97,14 @@ layout: default
                 <picture>
                     <source type="image/webp" srcset="assets/altstore.webp">
                     <source type="image/png" srcset="assets/altstore.png">
-                    <img class="hoverscale" src="assets/altstore.png">
+                    <img class="hoverscale" src="assets/altstore.png" alt="Get iSH on AltStore">
                 </picture>
             </a>
         </div>
     </div>
     <div class="tempextraoptions"> <!-- Have other design ideas for later :) -->
         <div class="block outsideblock">
-            {% include github-icon.html %}<div class="tftext"><a href="{{ site.links.github }}">Build from source</a></div>
+            {% include github-icon.html %}<a href="{{ site.links.github }}"><div class="tftext">Build from source</div></a>
         </div>
     </div>
     <div class="bottomtext">

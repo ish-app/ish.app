@@ -10,7 +10,7 @@ layout: default
             <div class="icons">
                 <a href="{{ site.links.testflight }}">
                     <div class="thetestflightbutton">
-                        <img src="/assets/testflight.png" style="height: 40px; width: auto"/>
+                        <img src="assets/testflight.png" style="height: 40px; width: auto"/>
                         <div class="tftext">Get {{ site.title }} beta</div>
                     </div>
                 </a>
@@ -18,7 +18,11 @@ layout: default
                 <a href="{{ site.links.discord }}" target="_blank">{% include discord-icon.html %}</a>
             </div>
         </div>
-        <img class="iphone whidden" src="assets/front-iphone.png" alt="iSH running on an iPhone"/>
+        <picture>
+            <source type="image/webp" srcset="assets/front-iphone.webp">
+            <source type="image/png" srcset="assets/front-iphone.png">
+            <img class="iphone whidden" src="assets/front-iphone.png" alt="iSH running on an iPhone">
+        </picture>
     </div>
     <div class="anidiv">
         <i class="material-icons">
@@ -35,7 +39,11 @@ layout: default
     </p>
     <div class="expl">
         <div>
-            <img class="ipad" src="assets/front-ipad.png" alt="iSH running on an iPad" />
+            <picture>
+                <source type="image/webp" srcset="assets/front-ipad.webp">
+                <source type="image/png" srcset="assets/front-ipad.png">
+                <img class="ipad" src="assets/front-ipad.png" alt="iSH running on an iPad">
+            </picture>
             <p>{{ site.title }} gives you the ability to run Linux applications and programs on iOS.</p>
         </div>
         <div class="info">
@@ -46,7 +54,11 @@ layout: default
                     <br />
                     You can install programs with <code>apk add &#60;name&#62;</code>.
                 </p>
-                <img class="boxpict" src="assets/iphone-alpine.png" alt="apk installing Bash on an iPhone" />
+                <picture>
+                    <source type="image/webp" srcset="assets/iphone-alpine.webp">
+                    <source type="image/png" srcset="assets/iphone-alpine.png">
+                    <img class="boxpict" src="assets/iphone-alpine.png" alt="apk installing Bash on an iPhone">
+                </picture>
                 <a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management">Learn more</a></p>
             </div>
             <div class="infobox">
@@ -56,7 +68,11 @@ layout: default
                     <br />
                     Here's what the buttons do:
                 </p>
-                <img class="boxpict" src="assets/iphone-keyboard.png" alt="The iSH keyboard addition on an iPhone" />
+                <picture>
+                    <source type="image/webp" srcset="assets/iphone-keyboard.webp">
+                    <source type="image/png" srcset="assets/iphone-keyboard.png">
+                    <img class="boxpict" src="assets/iphone-keyboard.png" alt="The iSH keyboard addition on an iPhone">
+                </picture>
             </div>
         </div>
     </div>
@@ -70,7 +86,7 @@ layout: default
             <p class="meds">Join the TestFlight beta!</p>
             <p>You can get {{ site.title }} by joining the <a href="{{ site.links.testflight }}">TestFlight beta</a>.</p>
             <a href="{{ site.links.testflight }}">
-                <img src="/assets/testflight.png" class="hoverscale">
+                <img src="assets/testflight.png" class="hoverscale">
             </a>
         </div>
         <div class="midline whidden"></div>
@@ -78,13 +94,17 @@ layout: default
             <p class="meds">Get {{ site.title }} on AltStore</p>
             <p>Alternatively, get <a href="https://altstore.io">AltStore</a> and add <a href="{{ site.links.altstore }}">this source</a>!</p>
             <a href="{{ site.links.altstore }}">
-                <img src="/assets/altstore.png" class="hoverscale">
+                <picture>
+                    <source type="image/webp" srcset="assets/altstore.webp">
+                    <source type="image/png" srcset="assets/altstore.png">
+                    <img class="hoverscale" src="assets/altstore.png">
+                </picture>
             </a>
         </div>
     </div>
     <div class="tempextraoptions"> <!-- Have other design ideas for later :) -->
         <div class="block outsideblock">
-            {% include github-icon.html %}<a href="{{ site.links.github }}"><div class="tftext">Build from source</div></a>
+            {% include github-icon.html %}<div class="tftext"><a href="{{ site.links.github }}">Build from source</a></div>
         </div>
     </div>
     <div class="bottomtext">

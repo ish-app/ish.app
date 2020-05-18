@@ -1,6 +1,6 @@
-jQuery.easing.def = "easeInOutQuad";
+$(document).ready(function() {
+    jQuery.easing.def = "easeInOutQuad";
 
-$(window).on("load", function() {
     let body = $(document.body);
     let root = $("html, body");
     let hlimit = 64;

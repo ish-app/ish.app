@@ -25,14 +25,12 @@ a:hover {
     color: #4286f4;
 }
 
-/* Neat horizontal divider */
 hr {
     border: 0;
     border-top: 1px solid #818181;
     width: 50%;
 }
 
-/* Header */
 header {
     box-shadow: 0 0 0px black;
     height: 64px;
@@ -43,17 +41,14 @@ header {
     top: 0;
     position: fixed;
     z-index: 2;
-    /* Flexboxes */
     display: flex;
     align-items: center;
 }
 
-/* Navigation bar */
 nav {
     display: inherit;
 }
 
-/* Navigation bar links */
 nav a {
     border: solid rgba(255, 255, 255, 0.1);
     border-width: 3px 0;
@@ -74,7 +69,7 @@ nav a:hover {
     color: white;
 }
 
-/* Front page container. */
+/* Contains entire front page */
 .front-container {
     display: flex;
     align-items: center;
@@ -87,42 +82,48 @@ nav a:hover {
     margin-top: 0;
 }
 
-/* The large iSH icon. */
+/* The large iSH icon */
 .icon {
     height: 10em;
     border-radius: 32px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid #4b4d5c;
 }
 
-.icons {
-    display: flex;
+/* Fancy Get buttons */
+.actions {
     align-items: center;
     font-size: 20pt;
-    max-width: 310px;
-    justify-content: space-evenly;
+    max-width: 300px;
 }
 
-/* Fancy Get Beta button */
-.thetestflightbutton {
+.thegetbutton {
     display: flex;
     align-items: center;
-    border-radius: 12px;
-    background: #fff;
-    width: 170px;
-    height: 40px;
-    color: #000;
+    border-radius: 16px;
+    border: 2px solid #4b4d5c;
+    background: #000;
+    width: 280px;
+    color: #fff;
     transition: all .2s ease-in-out;
+    padding: 0.4em;
+    margin-bottom: 6px;
 }
 
-.tftext {
-    text-align: left;
+.thegetbutton img {
+    height: 40px;
+    width: auto;
+    border-radius: 9px;
+}
+
+.gettext {
+    text-align: center;
     flex-grow: 1;
-    margin-left: 0.4em;
     font-size: 20px;
 }
 
-.thetestflightbutton:hover {
+.thegetbutton:hover {
     transform: scale(1.03);
+    border: 2px solid #686a7d;
 }
 
 /* Primary text on front page */
@@ -150,7 +151,7 @@ nav a:hover {
     vertical-align: text-top;
 }
 
-/* iPhone X image */
+/* iPhone image */
 .iphone {
     height: auto;
     max-width: 30vw;
@@ -310,12 +311,14 @@ nav a:hover {
     height: 2em;
     color: #f1f1f1;
     fill: currentColor;
+    margin-right: 0.4em;
 }
 
 .hoverscale {
     width: 30%;
     height: auto;
     transition: .4s transform;
+    border-radius: 20px;
 }
 
 .hoverscale:hover,
@@ -367,6 +370,7 @@ nav a:hover {
     }
     .icon {
       z-index: 1;
+      height: 140px;
       align-self: center;
     }
     .iphone {
@@ -410,7 +414,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 600px) {
     .hhidden {
         display: none;
     }

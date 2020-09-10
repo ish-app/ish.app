@@ -43,6 +43,7 @@ header {
     z-index: 2;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 nav {
@@ -142,14 +143,14 @@ nav a:hover {
     margin: 10px;
 }
 
-/* The GitHub icon */
+/* The GitHub icon
 .fronttext svg {
     width: 1.5em;
     height: 1.5em;
     color: #f1f1f1;
     fill: currentColor;
     vertical-align: text-top;
-}
+}*/
 
 /* iPhone image */
 .iphone {
@@ -338,11 +339,6 @@ nav a:hover {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Flexdivider creates space to separate objects in flex */
-.flexdivider {
-    width: 90%;
-}
-
 /* This is basically just a vertical divider */
 .midline {
     border-left: 1px solid #616161;
@@ -351,7 +347,6 @@ nav a:hover {
     display: inline-block;
 }
 
-/* Medium-sized text, not medicine. */
 .meds {
     font-size: 22px;
     margin-bottom: 12px;
@@ -369,7 +364,6 @@ nav a:hover {
         width: 100%;
     }
     .icon {
-      z-index: 1;
       height: 140px;
       align-self: center;
     }
@@ -380,7 +374,6 @@ nav a:hover {
       flex-grow: 0;
       text-align: center;
       margin: 2em 0 0 0;
-      z-index: 1;
     }
     .photo {
         max-width: 100%;
@@ -405,12 +398,8 @@ nav a:hover {
     .options, .expl {
         flex-direction: column;
     }
-    .margin {
-        margin: 50px;
+    .bottomtext p {
         text-align: center;
-    }
-    .bottomtext {
-        padding: 0;
     }
 }
 

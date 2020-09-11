@@ -79,7 +79,7 @@ nav a:hover {
     max-width: 70em;
     height: 100%;
     position: relative;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 0;
 }
 
@@ -157,6 +157,7 @@ nav a:hover {
     height: auto;
     max-width: 30vw;
     max-height: 75vh;
+    margin: 0 30px 0 30px;
 }
 
 /* iPad photo */
@@ -401,6 +402,12 @@ nav a:hover {
     }
     .bottomtext p {
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .iphone {
+        display: none;
     }
 }
 

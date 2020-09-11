@@ -11,7 +11,7 @@ links:
     testflight: "https://testflight.apple.com/join/97i7KM8O"
     reddit: "https://ish.reddit.com"
     twitter: "https://twitter.com/iSH_app"
-    altstore: "https://ish.app/altstore.json"
+    altstore: "altstore://source?url=https://ish.app/altstore.json"
 
 repository: ish-app/ish # for jekyll/github-metadata
 markdown: kramdown

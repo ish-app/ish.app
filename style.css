@@ -167,9 +167,14 @@ nav a:hover {
 
 /* The arrow pointing down */
 .downarrow {
-    bottom: 5px;
-    font-size: 92px !important;
-    color: white;
+    padding: 30px;
+    width: 48px;
+    margin: 0 auto;
+}
+
+.downarrow svg {
+    fill: white;
+    animation: fadeIn 1s ease-out;
 }
 
 .anidiv {
@@ -186,10 +191,6 @@ nav a:hover {
     40% { transform: translateY(0px); }
     55% { transform: translateY(-12px); }
     100% { transform: translateY(0px); }
-}
-
-.material-icons {
-    animation: fadeIn 1s ease-out;
 }
 
 @keyframes fadeIn {

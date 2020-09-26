@@ -17,28 +17,11 @@
         <meta name="theme-color" content="#17192d">
 
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:400&display=swap" rel="stylesheet">
-        <script defer src="site.js"></script>
-        <noscript>
-            <style>
-            header {
-                background-color: #262626;
-                box-shadow: 0 0 4px black;
-            }
-            </style>
-        </noscript>
     </head>
     <body>
-        <header class="whidden" id="headr">
-            <nav>
-                <a href="#home">Home</a>
-                <div class="divider"></div>
-                <a href="#get">Get {{ site.title }}</a>
-            </nav>
-        </header>
         {{ content }}
         <footer>
             <hr />
-            <!-- Todo: Add icons in footer for different contact methods (email/twitter/github/whatever) -->
             <p class="meds footertext">{{ site.title }}, &copy; 2017–{{ 'now' | date: "%Y" }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         </footer>
     </body>

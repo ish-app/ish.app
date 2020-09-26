@@ -9,7 +9,6 @@ body {
     font-size: 1.17em;
 }
 
-/* Font & Texts */
 h1, h2, p {
     font-weight: 400;
 }
@@ -32,15 +31,9 @@ hr {
 }
 
 header {
-    box-shadow: 0 0 0px black;
     height: 64px;
     width: 100%;
     line-height: 32px;
-    background: rgba(38, 38, 38, 0);
-    left: 0;
-    top: 0;
-    position: fixed;
-    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -56,8 +49,7 @@ nav a {
     color: inherit;
     padding: 8px;
     width: 100px;
-    transition: background .2s ease-in-out, box-shadow .4s, color .5s, border 1s;
-    float: right;
+    transition: background .1s ease-in-out, box-shadow .3s, color .4s, border .5s;
     margin-right: 12px;
     margin-left: 12px;
     font-size: 20px;
@@ -70,17 +62,21 @@ nav a:hover {
     color: white;
 }
 
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Contains entire front page */
 .front-container {
     display: flex;
     align-items: center;
-    margin: 48px auto;
     width: 90%;
     max-width: 70em;
-    height: 100%;
-    position: relative;
-    justify-content: space-around;
-    margin-top: 0;
+    justify-content: space-evenly;
+    flex-grow: 2;
 }
 
 /* The large iSH icon */
@@ -97,7 +93,7 @@ nav a:hover {
     max-width: 300px;
 }
 
-.thegetbutton {
+.get {
     display: flex;
     align-items: center;
     border-radius: 16px;
@@ -110,7 +106,7 @@ nav a:hover {
     margin-bottom: 6px;
 }
 
-.thegetbutton img {
+.get img {
     height: 40px;
     width: auto;
     border-radius: 9px;
@@ -122,7 +118,7 @@ nav a:hover {
     font-size: 20px;
 }
 
-.thegetbutton:hover {
+.get:hover {
     transform: scale(1.03);
     border: 2px solid #686a7d;
 }
@@ -143,54 +139,37 @@ nav a:hover {
     margin: 10px;
 }
 
-/* The GitHub icon
-.fronttext svg {
-    width: 1.5em;
-    height: 1.5em;
-    color: #f1f1f1;
-    fill: currentColor;
-    vertical-align: text-top;
-}*/
-
-/* iPhone image */
 .iphone {
     height: auto;
-    max-width: 30vw;
+    max-width: 500px;
     max-height: 75vh;
     margin: 0 30px 0 30px;
 }
 
-/* iPad photo */
 .ipad {
     height: auto;
     width: 80%;
 }
 
-/* The arrow pointing down */
 .downarrow {
-    padding: 30px;
-    width: 48px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 100%;
 }
 
 .downarrow svg {
     fill: white;
-    animation: fadeIn 1s ease-out;
-}
-
-.anidiv {
-    animation: bounce 2s ease-in-out 1.5s;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    width: 48px;
+    animation: bounce 2s ease-in-out 1.5s, fadeIn 1s ease-out;
 }
 
 @keyframes bounce {
     0% { transform: translateY(0px); }
-    20% { transform: translateY(-24px); }
+    20% { transform: translateY(-12px); }
     40% { transform: translateY(0px); }
-    55% { transform: translateY(-12px); }
+    55% { transform: translateY(-8px); }
     100% { transform: translateY(0px); }
 }
 
@@ -201,10 +180,7 @@ nav a:hover {
 
 .home {
     background: linear-gradient(170deg, #20233c, #0f1121);
-    top: 0;
     height: 100vh;
-    position: relative;
-    overflow-y: hidden;
 }
 
 /* Light section */
@@ -359,7 +335,15 @@ nav a:hover {
 }
 
 /* Mobile optimisations */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 860px) {
+    header {
+        justify-content: space-around;
+    }
+    nav a {
+        padding: 6px;
+        width: 90px;
+        margin: 8px;
+    }
     .front-container {
         flex-direction: column;
         margin: 0;
@@ -367,7 +351,6 @@ nav a:hover {
     }
     .icon {
       height: 140px;
-      align-self: center;
     }
     .iphone {
       display: none;
@@ -405,14 +388,16 @@ nav a:hover {
     }
 }
 
-@media only screen and (max-width: 860px) {
-    .iphone {
+@media only screen and (max-height: 500px) {
+    .hhidden {
         display: none;
     }
 }
 
-@media only screen and (max-height: 600px) {
-    .hhidden {
-        display: none;
+@media only screen and (max-width: 400px) {
+    nav a {
+        padding: 4px;
+        width: 80px;
+        margin: 5px;
     }
 }

@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
-<div id="home" class="home">
-        <header>
-            <nav>
-                <a href="{{ site.links.github }}">GitHub</a>
-                <div class="divider whidden"></div>
-                <a href="{{ site.links.discord }}" target="_blank" rel="noopener">Discord</a>
-                <div class="divider whidden"></div>
-                <a href="{{ site.links.twitter }}">Twitter</a>
-            </nav>
-        </header>
+<section id="home" class="home">
+    <header>
+        <nav>
+            <a href="{{ site.links.github }}">GitHub</a>
+            <div class="divider whidden"></div>
+            <a href="{{ site.links.discord }}" target="_blank" rel="noopener">Discord</a>
+            <div class="divider whidden"></div>
+            <a href="{{ site.links.twitter }}">Twitter</a>
+        </nav>
+    </header>
     <div class="front-container">
         <img src="assets/icon.png" alt="iSH icon" class="icon hhidden" />
         <div class="fronttext">
@@ -25,14 +25,13 @@ layout: default
                 </a>
             </div>
             <div class="actions">
-                <a href="{{ site.links.altstore }}">
+                <a href="/altstore">
                     <div class="get">
                         <img src="assets/altstore.png" alt="AltStore logo" />
                         <div class="gettext">Get {{ site.title }} on AltStore</div>
                     </div>
                 </a>
             </div>
-
         </div>
         <picture>
             <source type="image/webp" srcset="assets/front-iphone.webp">
@@ -43,7 +42,7 @@ layout: default
     <div class="hhidden downarrow">
         <svg viewBox="0 0 57 34" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M28.284 22.627L50.912 0l5.657 5.657L28.284 33.94 0 5.657 5.657 0l22.627 22.627z"/></svg>
     </div>
-</div>
+</section>
 
 <section id="info" class="lightsec">
     <h1>Wait, what's {{ site.title }}?</h1>
@@ -128,3 +127,8 @@ layout: default
         <p>You can also become a <a href="https://patreon.com/tbodt">patron</a> if you would like support {{ site.title }}.<br />Donations are very much appreciated, but will never be required; the app will always be completely free.</p>
     </div>
 </section>
+
+<footer>
+    <hr />
+    <p class="meds footertext">{{ site.title }}, &copy; 2017–{{ 'now' | date: "%Y" }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+</footer>

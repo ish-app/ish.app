@@ -406,3 +406,40 @@ nav a:hover {
         margin: 5px;
     }
 }
+
+/* AltStore page */
+.altcontainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 20px;
+    height: 100%;
+    background-color: #0f0f0f;
+}
+
+.step {
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 275px;
+}
+
+.step h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.number {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 1em;
+}

@@ -9,7 +9,6 @@ body {
     font-size: 1.17em;
 }
 
-/* Font & Texts */
 h1, h2, p {
     font-weight: 400;
 }
@@ -25,43 +24,32 @@ a:hover {
     color: #4286f4;
 }
 
-/* Neat horizontal divider */
 hr {
     border: 0;
     border-top: 1px solid #818181;
     width: 50%;
 }
 
-/* Header */
 header {
-    box-shadow: 0 0 0px black;
     height: 64px;
     width: 100%;
     line-height: 32px;
-    background: rgba(38, 38, 38, 0);
-    left: 0;
-    top: 0;
-    position: fixed;
-    z-index: 2;
-    /* Flexboxes */
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
-/* Navigation bar */
 nav {
     display: inherit;
 }
 
-/* Navigation bar links */
 nav a {
     border: solid rgba(255, 255, 255, 0.1);
     border-width: 3px 0;
     color: inherit;
     padding: 8px;
     width: 100px;
-    transition: background .2s ease-in-out, box-shadow .4s, color .5s, border 1s;
-    float: right;
+    transition: background .1s ease-in-out, box-shadow .3s, color .4s, border .5s;
     margin-right: 12px;
     margin-left: 12px;
     font-size: 20px;
@@ -74,62 +62,72 @@ nav a:hover {
     color: white;
 }
 
-/* Front page container. */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Contains entire front page */
 .front-container {
     display: flex;
     align-items: center;
-    margin: 48px auto;
     width: 90%;
     max-width: 70em;
-    height: 100%;
-    position: relative;
-    justify-content: center;
-    margin-top: 0;
+    justify-content: space-evenly;
+    flex-grow: 2;
 }
 
-/* The large iSH icon. */
+/* The large iSH icon */
 .icon {
     height: 10em;
     border-radius: 32px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid #4b4d5c;
 }
 
-.icons {
-    display: flex;
+/* Fancy Get buttons */
+.actions {
     align-items: center;
     font-size: 20pt;
-    max-width: 310px;
-    justify-content: space-evenly;
+    max-width: 300px;
 }
 
-/* Fancy Get Beta button */
-.thetestflightbutton {
+.get {
     display: flex;
     align-items: center;
-    border-radius: 12px;
-    background: #fff;
-    width: 170px;
-    height: 40px;
-    color: #000;
+    border-radius: 16px;
+    border: 2px solid #4b4d5c;
+    background: #000;
+    width: 280px;
+    color: #fff;
     transition: all .2s ease-in-out;
+    padding: 0.4em;
+    margin-bottom: 6px;
 }
 
-.tftext {
-    text-align: left;
+.get img {
+    height: 40px;
+    width: auto;
+    border-radius: 9px;
+}
+
+.gettext {
+    text-align: center;
     flex-grow: 1;
-    margin-left: 0.4em;
     font-size: 20px;
 }
 
-.thetestflightbutton:hover {
+.get:hover {
     transform: scale(1.03);
+    border: 2px solid #686a7d;
 }
 
 /* Primary text on front page */
 .fronttext {
     text-align: left;
     flex-grow: 1;
-    margin-left: 2em;
+    margin: 0 2em 0 2em;
 }
 
 .fronttext h1 {
@@ -138,56 +136,40 @@ nav a:hover {
 }
 
 .fronttext h1, .fronttext h2 {
-    margin: 10px;
+    margin: 10px 0 10px 0;
 }
 
-/* The GitHub icon */
-.fronttext svg {
-    width: 1.5em;
-    height: 1.5em;
-    color: #f1f1f1;
-    fill: currentColor;
-    vertical-align: text-top;
-}
-
-/* iPhone X image */
 .iphone {
     height: auto;
-    max-width: 30vw;
+    max-width: 100%;
     max-height: 75vh;
 }
 
-/* iPad photo */
 .ipad {
     height: auto;
     width: 80%;
 }
 
-/* The arrow pointing down */
 .downarrow {
-    bottom: 5px;
-    font-size: 92px !important;
-    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 64px;
+    width: 100%;
 }
 
-.anidiv {
-    animation: bounce 2s ease-in-out 1.5s;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.downarrow svg {
+    fill: white;
+    width: 48px;
+    animation: bounce 2s ease-in-out 1.5s, fadeIn 1s ease-out;
 }
 
 @keyframes bounce {
     0% { transform: translateY(0px); }
-    20% { transform: translateY(-24px); }
+    20% { transform: translateY(-12px); }
     40% { transform: translateY(0px); }
-    55% { transform: translateY(-12px); }
+    55% { transform: translateY(-8px); }
     100% { transform: translateY(0px); }
-}
-
-.material-icons {
-    animation: fadeIn 1s ease-out;
 }
 
 @keyframes fadeIn {
@@ -197,10 +179,7 @@ nav a:hover {
 
 .home {
     background: linear-gradient(170deg, #20233c, #0f1121);
-    top: 0;
     height: 100vh;
-    position: relative;
-    overflow-y: hidden;
 }
 
 /* Light section */
@@ -310,12 +289,14 @@ nav a:hover {
     height: 2em;
     color: #f1f1f1;
     fill: currentColor;
+    margin-right: 0.4em;
 }
 
 .hoverscale {
     width: 30%;
     height: auto;
     transition: .4s transform;
+    border-radius: 20px;
 }
 
 .hoverscale:hover,
@@ -335,11 +316,6 @@ nav a:hover {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Flexdivider creates space to separate objects in flex */
-.flexdivider {
-    width: 90%;
-}
-
 /* This is basically just a vertical divider */
 .midline {
     border-left: 1px solid #616161;
@@ -348,7 +324,6 @@ nav a:hover {
     display: inline-block;
 }
 
-/* Medium-sized text, not medicine. */
 .meds {
     font-size: 22px;
     margin-bottom: 12px;
@@ -359,15 +334,22 @@ nav a:hover {
 }
 
 /* Mobile optimisations */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 860px) {
+    header {
+        justify-content: space-around;
+    }
+    nav a {
+        padding: 6px;
+        width: 90px;
+        margin: 8px;
+    }
     .front-container {
         flex-direction: column;
         margin: 0;
         width: 100%;
     }
     .icon {
-      z-index: 1;
-      align-self: center;
+      height: 140px;
     }
     .iphone {
       display: none;
@@ -376,7 +358,6 @@ nav a:hover {
       flex-grow: 0;
       text-align: center;
       margin: 2em 0 0 0;
-      z-index: 1;
     }
     .photo {
         max-width: 100%;
@@ -401,17 +382,64 @@ nav a:hover {
     .options, .expl {
         flex-direction: column;
     }
-    .margin {
-        margin: 50px;
+    .bottomtext p {
         text-align: center;
-    }
-    .bottomtext {
-        padding: 0;
     }
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 500px) {
     .hhidden {
         display: none;
     }
+}
+
+@media only screen and (max-height: 600px) {
+    .downarrow {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    nav a {
+        padding: 4px;
+        width: 80px;
+        margin: 5px;
+    }
+}
+
+/* AltStore page */
+.altcontainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 20px;
+    height: 100%;
+    background-color: #0f0f0f;
+}
+
+.step {
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 275px;
+}
+
+.step h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.number {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 1em;
 }

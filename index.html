@@ -1,21 +1,36 @@
 ---
 layout: default
 ---
-<div id="home" class="home">
+<section id="home" class="home">
+    <header>
+        <nav>
+            <a href="{{ site.links.github }}">GitHub</a>
+            <div class="divider whidden"></div>
+            <a href="{{ site.links.discord }}" target="_blank" rel="noopener">Discord</a>
+            <div class="divider whidden"></div>
+            <a href="{{ site.links.twitter }}">Twitter</a>
+        </nav>
+    </header>
     <div class="front-container">
-        <img src="assets/icon.png" alt="iSH icon" class="icon" />
+        <img src="assets/icon.png" alt="iSH icon" class="icon hhidden" />
         <div class="fronttext">
             <h1>{{ site.title }}</h1>
             <h2>The Linux shell on iOS.</h2>
-            <div class="icons">
+            <div class="actions">
                 <a href="{{ site.links.testflight }}">
-                    <div class="thetestflightbutton">
-                        <img src="assets/testflight.png" style="height: 40px; width: auto" alt="Get iSH beta" />
-                        <div class="tftext">Get {{ site.title }} beta</div>
+                    <div class="get">
+                        <img src="assets/testflight.png" alt="TestFlight logo" />
+                        <div class="gettext">Get {{ site.title }} on TestFlight</div>
                     </div>
                 </a>
-                <a href="{{ site.links.github }}" aria-label="iSH on GitHub">{% include github-icon.html %}</a>
-                <a href="{{ site.links.discord }}" target="_blank" rel="noopener" aria-label="iSH on Discord">{% include discord-icon.html %}</a>
+            </div>
+            <div class="actions">
+                <a href="/altstore">
+                    <div class="get">
+                        <img src="assets/altstore.png" alt="AltStore logo" />
+                        <div class="gettext">Get {{ site.title }} on AltStore</div>
+                    </div>
+                </a>
             </div>
         </div>
         <picture>
@@ -24,12 +39,10 @@ layout: default
             <img class="iphone whidden" src="assets/front-iphone.png" alt="iSH running on an iPhone">
         </picture>
     </div>
-    <div class="anidiv">
-        <i class="material-icons">
-            <a href="#info" class="downarrow">keyboard_arrow_down</a>
-        </i>
+    <div class="hhidden downarrow">
+        <svg viewBox="0 0 57 34" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M28.284 22.627L50.912 0l5.657 5.657L28.284 33.94 0 5.657 5.657 0l22.627 22.627z"/></svg>
     </div>
-</div>
+</section>
 
 <section id="info" class="lightsec">
     <h1>Wait, what's {{ site.title }}?</h1>
@@ -105,12 +118,17 @@ layout: default
     </div>
     <div class="tempextraoptions"> <!-- Have other design ideas for later :) -->
         <div class="block outsideblock">
-            {% include github-icon.html %}<a href="{{ site.links.github }}"><div class="tftext">Build from source</div></a>
+            {% include github-icon.html %}<a href="{{ site.links.github }}"><p>Build from source</p></a>
         </div>
     </div>
     <div class="bottomtext">
-        <p class="margin">Join our <a href="{{ site.links.discord }}">Discord server</a> if you have any questions or concerns, or you just want to chat!<br />
+        <p>Join our <a href="{{ site.links.discord }}">Discord server</a> if you have any questions or concerns, or you just want to chat!<br />
             There's also a <a href="{{ site.links.reddit }}">subreddit</a> for discussions and a <a href="{{ site.links.twitter }}">Twitter</a>.</p>
-        <p class="margin">You can also become a <a href="https://patreon.com/tbodt">patron</a> if you would like support {{ site.title }}.<br />Donations are very much appreciated, but will never be required; the app will always be completely free.</p>
+        <p>You can also become a <a href="https://patreon.com/tbodt">patron</a> if you would like support {{ site.title }}.<br />Donations are very much appreciated, but will never be required; the app will always be completely free.</p>
     </div>
 </section>
+
+<footer>
+    <hr />
+    <p class="meds footertext">{{ site.title }}, &copy; 2017–{{ 'now' | date: "%Y" }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+</footer>

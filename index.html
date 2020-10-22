@@ -15,12 +15,12 @@ layout: default
         <img src="assets/icon.png" alt="iSH icon" class="icon hhidden" />
         <div class="fronttext">
             <h1>{{ site.title }}</h1>
-            <h2>The Linux shell on iOS.</h2>
+            <h2>The Linux shell for iOS.</h2>
             <div class="actions">
-                <a href="{{ site.links.testflight }}">
+                <a href="{{ site.links.appstore }}">
                     <div class="get">
-                        <img src="assets/testflight.png" alt="TestFlight logo" />
-                        <div class="gettext">Get {{ site.title }} on TestFlight</div>
+                        <img src="assets/appstore.svg" alt="App Store icon" />
+                        <p>Get on the App Store</p>
                     </div>
                 </a>
             </div>
@@ -28,19 +28,23 @@ layout: default
                 <a href="/altstore">
                     <div class="get">
                         <img src="assets/altstore.png" alt="AltStore logo" />
-                        <div class="gettext">Get {{ site.title }} on AltStore</div>
+                        <p>Get {{ site.title }} on AltStore</p>
                     </div>
                 </a>
             </div>
         </div>
         <picture>
+            <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="assets/front-iphone-dark.webp">
             <source type="image/webp" srcset="assets/front-iphone.webp">
+            <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/front-iphone-dark.png">
             <source type="image/png" srcset="assets/front-iphone.png">
             <img class="iphone whidden" src="assets/front-iphone.png" alt="iSH running on an iPhone">
         </picture>
     </div>
     <div class="hhidden downarrow">
-        <svg viewBox="0 0 57 34" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M28.284 22.627L50.912 0l5.657 5.657L28.284 33.94 0 5.657 5.657 0l22.627 22.627z"/></svg>
+        <a href="#info">
+            <svg viewBox="0 0 57 34" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M28.284 22.627L50.912 0l5.657 5.657L28.284 33.94 0 5.657 5.657 0l22.627 22.627z"/></svg>
+        </a>
     </div>
 </section>
 
@@ -48,32 +52,30 @@ layout: default
     <h1>Wait, what's {{ site.title }}?</h1>
     <hr />
     <p class="meds">
-        {{ site.title }} is a project to get a Linux shell environment running locally on your iOS device, using a usermode x86 emulator.<br />
+        {{ site.title }} is a project to get a Linux shell environment running locally on your iOS device, using a usermode x86 emulator.
     </p>
     <div class="expl">
         <div>
             <picture>
+                <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="assets/front-ipad-dark.webp">
                 <source type="image/webp" srcset="assets/front-ipad.webp">
+                <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/front-ipad-dark.png">
                 <source type="image/png" srcset="assets/front-ipad.png">
                 <img class="ipad" src="assets/front-ipad.png" alt="iSH running on an iPad">
             </picture>
-            <p>{{ site.title }} gives you the ability to run Linux applications and programs on iOS.</p>
+            <p>...and it works on iPad, too!</p>
         </div>
         <div class="info">
             <div class="infobox">
-                <p class="meds">Alpine</p>
-                <p>
-                    You have access to the Alpine package manager in {{ site.title }}.
-                    <br />
-                    You can install programs with <code>apk add &#60;name&#62;</code>.
-                </p>
+                <p class="meds">BusyBox</p>
+                <p>You can edit files with sed and cat, move them around, and more!</p>
                 <picture>
-                    <source type="image/webp" srcset="assets/iphone-alpine.webp">
-                    <source type="image/png" srcset="assets/iphone-alpine.png">
-                    <img class="boxpict" src="assets/iphone-alpine.png" alt="apk installing Bash on an iPhone">
+                    <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="assets/iphone-busybox-dark.webp">
+                    <source type="image/webp" srcset="assets/iphone-busybox.webp">
+                    <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/iphone-busybox-dark.png">
+                    <source type="image/png" srcset="assets/iphone-busybox.png">
+                    <img class="boxpict" src="assets/iphone-busybox.png" alt="Starting BusyBox on an iPhone">
                 </picture>
-                <a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management">Alpine command guide</a></p>
-                <!-- link package list instead? -->
             </div>
             <div class="infobox">
                 <p class="meds">The Keyboard</p>
@@ -93,42 +95,45 @@ layout: default
 </section>
 
 <section id="get">
-    <h1>So, how do I get {{ site.title }}?</h1>
+    <h1>Sounds cool, can I get that?</h1>
     <hr />
-    <div class="options">
-        <div class="left block">
-            <p class="meds">Join the TestFlight beta!</p>
-            <p>You can get {{ site.title }} by joining the <a href="{{ site.links.testflight }}">TestFlight beta</a>.</p>
+    <p>Of course, let's get started!</p>
+    <div class="getcontainer">
+        <div>
+            <div class="actions">
+                <a href="{{ site.links.appstore }}">
+                    <div class="get">
+                        <img src="assets/appstore.svg" alt="App Store icon" />
+                        <p>Get on the App Store</p>
+                    </div>
+                </a>
+            </div>
             <a href="{{ site.links.testflight }}">
-                <img src="assets/testflight.png" class="hoverscale" alt="Get iSH on TestFlight">
+                <p class="other">Join the TestFlight Beta</p>
             </a>
         </div>
         <div class="midline whidden"></div>
-        <div class="right block">
-            <p class="meds">Get {{ site.title }} on AltStore</p>
-            <p>Alternatively, get <a href="https://altstore.io">AltStore</a> and add <a href="{{ site.links.altstore }}">this source</a>!</p>
-            <a href="{{ site.links.altstore }}">
-                <picture>
-                    <source type="image/webp" srcset="assets/altstore.webp">
-                    <source type="image/png" srcset="assets/altstore.png">
-                    <img class="hoverscale" src="assets/altstore.png" alt="Get iSH on AltStore">
-                </picture>
+        <div>
+            <div class="actions">
+                <a href="/altstore">
+                    <div class="get">
+                        <img src="assets/altstore.png" alt="AltStore logo" />
+                        <p>Get {{ site.title }} on AltStore </p>
+                    </div>
+                </a>
+            </div>
+            <a href="{{ site.links.github }}" class="">
+                <p class="other">Build {{ site.title }} from source</p>
             </a>
         </div>
     </div>
-    <div class="tempextraoptions"> <!-- Have other design ideas for later :) -->
-        <div class="block outsideblock">
-            {% include github-icon.html %}<a href="{{ site.links.github }}"><p>Build from source</p></a>
-        </div>
-    </div>
     <div class="bottomtext">
-        <p>Join our <a href="{{ site.links.discord }}">Discord server</a> if you have any questions or concerns, or you just want to chat!<br />
-            There's also a <a href="{{ site.links.reddit }}">subreddit</a> for discussions and a <a href="{{ site.links.twitter }}">Twitter</a>.</p>
-        <p>You can also become a <a href="https://patreon.com/tbodt">patron</a> if you would like support {{ site.title }}.<br />Donations are very much appreciated, but will never be required; the app will always be completely free.</p>
+        <p>Join our <a href="{{ site.links.discord }}">Discord server</a> if you have any questions or concerns, or you just want to chat! There's also a <a href="{{ site.links.reddit }}">subreddit</a> for discussions and a <a href="{{ site.links.twitter }}">Twitter</a>.</p>
+        <p>You can also become a <a href="https://patreon.com/tbodt">patron</a> if you would like support {{ site.title }}. Donations are very much appreciated, but will never be required; the app will always be completely free.</p>
     </div>
 </section>
 
 <footer>
     <hr />
-    <p class="meds footertext">{{ site.title }}, &copy; 2017–{{ 'now' | date: "%Y" }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p class="meds">{{ site.title }}, &copy; 2017–{{ 'now' | date: "%Y" }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 </footer>

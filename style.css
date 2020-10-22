@@ -1,7 +1,7 @@
 /* Main stylesheet for ish.app */
 body {
-    background: #161616; /* #0f0f0f? */
-    color: #f1f1f1;
+    background: #161616;
+    color: #fff;
     /* Noto Sans is Firefox default, looks better than sans-serif */
     font-family: 'Ubuntu','Noto Sans',sans-serif;
     text-align: center;
@@ -62,6 +62,11 @@ nav a:hover {
     color: white;
 }
 
+footer p {
+    padding: 10px;
+    margin: 0;
+}
+
 .home {
     display: flex;
     flex-direction: column;
@@ -101,7 +106,7 @@ nav a:hover {
     background: #000;
     width: 280px;
     color: #fff;
-    transition: all .2s ease-in-out;
+    transition: all .15s ease-in-out;
     padding: 0.4em;
     margin-bottom: 6px;
 }
@@ -112,10 +117,11 @@ nav a:hover {
     border-radius: 9px;
 }
 
-.gettext {
+.get p {
     text-align: center;
     flex-grow: 1;
     font-size: 20px;
+    margin: 0;
 }
 
 .get:hover {
@@ -203,7 +209,7 @@ nav a:hover {
 }
 
 .infobox {
-    width: 70%;
+    width: 80%;
     background-color: #262626;
     color: #f1f1f1;
     border-radius: 10px;
@@ -223,8 +229,7 @@ nav a:hover {
 }
 
 /* "Info" and "Getting iSH" sections */
-#info h1,
-#get h1 {
+#info h1, #get h1 {
     font-size: 36px;
     margin: 12px;
 }
@@ -237,11 +242,10 @@ nav a:hover {
     right: 80px;
 }
 
-.options {
-    padding: 15px 0 15px 0;
+.getcontainer {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .block {
@@ -259,37 +263,17 @@ nav a:hover {
     margin-top: 12px;
 }
 
-/*
-.options .block svg {
-    width: 5em;
-    height: 5em;
+.actions svg {
+    width: 40px;
+    height: 40px;
     color: #f1f1f1;
     fill: currentColor;
     transition: .4s transform;
 }
-*/
 
-/* Temporary location for the GitHub button */
-.tempextraoptions {
-    display: flex;
-    justify-content: center;
-}
-
-.outsideblock {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 50px;
-    border-radius: 10px;
-}
-
-.outsideblock svg {
-    width: 2em;
-    height: 2em;
-    color: #f1f1f1;
-    fill: currentColor;
-    margin-right: 0.4em;
+.other {
+    font-size: 13pt;
+    margin: 12px;
 }
 
 .hoverscale {
@@ -316,11 +300,10 @@ nav a:hover {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* This is basically just a vertical divider */
 .midline {
     border-left: 1px solid #616161;
-    height: 220px;
-    margin: 30px;
+    height: 80px;
+    margin: 0 30px 0 30px;
     display: inline-block;
 }
 
@@ -329,12 +312,8 @@ nav a:hover {
     margin-bottom: 12px;
 }
 
-.footertext {
-    margin: 20px;
-}
-
 /* Mobile optimisations */
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 750px) {
     header {
         justify-content: space-around;
     }
@@ -372,18 +351,11 @@ nav a:hover {
     .block {
         margin: 6px 0 6px 0;
     }
-    .outsideblock {
-        margin: 0;
-        border-radius: 20px;
-    }
-    .options {
-        padding: 12px 0 6px 0;
-    }
-    .options, .expl {
+    .getcontainer {
         flex-direction: column;
     }
-    .bottomtext p {
-        text-align: center;
+    .expl {
+        display: block;
     }
 }
 
@@ -399,11 +371,25 @@ nav a:hover {
     }
 }
 
+@media only screen and (max-width: 860px) {
+    .iphone {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     nav a {
         padding: 4px;
         width: 80px;
         margin: 5px;
+    }
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+    .lightsec {
+        background-color: #0f0f0f;
+        color: #fff;
     }
 }
 

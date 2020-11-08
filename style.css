@@ -36,7 +36,23 @@ header {
     line-height: 32px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between; /* flex-end */
+
+    /* --- */
+    background-color: #ad443b; /*32a852*/
+}
+
+/* --- */
+.warning p {
+    padding: 0 0px 0 16px;
+}
+.warning a {
+    color: inherit;
+    padding: 0 10px 0 10px;
+    white-space: nowrap;
+}
+.warning a:hover {
+    text-decoration: underline;
 }
 
 nav {
@@ -315,7 +331,14 @@ footer p {
 @media only screen and (max-width: 750px) {
     header {
         justify-content: space-around;
+
+        /* --- */
+        flex-wrap: wrap;
+        height: auto;
+        align-items: center;
     }
+    .warning a, .warning p { padding: 0 }
+    .warning { margin-left: 0; }
     nav a {
         padding: 6px;
         width: 90px;

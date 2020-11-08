@@ -1,0 +1,42 @@
+body {
+    background-color: #f1f1f1;
+    color: #000;
+    font-family: Ubuntu, 'Noto Sans', sans-serif;
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 0 12px 0 12px;
+}
+
+a {
+    color: #2069bd;
+    transition: .5s color;
+    outline: 0;
+}
+
+a:hover {
+    color: #184e8c;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+p {
+    margin-top: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0f0f0f;
+        color: #fff;
+    }
+
+    a {
+        color: #85beff;
+    }
+    
+    a:hover {
+        color: #4286f4;
+    }
+}

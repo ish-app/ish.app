@@ -17,6 +17,10 @@ a:hover {
     color: #184e8c;
 }
 
+h1, h2 {
+    font-weight: 700;
+}
+
 h2 {
     font-size: 22px;
     margin-bottom: 4px;

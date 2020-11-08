@@ -28,5 +28,7 @@ Removal of iSH’s listing on the App Store should not affect your use of iSH if
 
 Precompiled builds of iSH (distributed as IPA files) will [remain available on GitHub](https://github.com/ish-app/ish/releases) for [installation through AltStore](https://ish.app/altstore) and for jailbroken users. Advanced users are welcome to [build iSH](https://github.com/ish-app/ish#build-for-ios) themselves—it’s free and open source and always will be!
 
+<div class="bubble"><strong><span style="color: #32a852">Update</span>: <a href="https://twitter.com/a_Shell_iOS/status/1325526061099196416">a-Shell has mentioned</a> that they have received a similar rejection notice. Apple may be running extra review for scripting apps.</strong></div>
+
 ---
 [Return home](/) | {{ page.date }}

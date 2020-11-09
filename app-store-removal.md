@@ -9,7 +9,7 @@ date: 2020-11-08
 <div class="bubble">
 <strong><span style="color: #32a852">Update</span></strong>: We got a call this evening from someone who runs App Review. They apologized for the experience we had, then told us they've accepted our appeal and won't be removing iSH from the store tomorrow. We'll stay in contact with them to work out details. Thanks everyone for your support!
 <br><br>
-If you're a scripting app that has had issues with section 2.5.2 in the past, feel free to reach out. We'd love to to include your experience in our discussions with Apple.
+If you're a scripting app that has had issues with section 2.5.2 in the past, feel free to reach out. We'd love to include your experience in our discussions with Apple.
 </div>
 </p>
 

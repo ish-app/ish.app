@@ -4,6 +4,15 @@ date: 2020-11-08
 ---
 
 # About iSH’s pending removal from the App Store
+
+<p>
+<div class="bubble">
+<strong><span style="color: #32a852">Update</span></strong>: We got a call this evening from someone who runs App Review. They apologized for the experience we had, then told us they've accepted our appeal and won't be removing iSH from the store tomorrow. We'll stay in contact with them to work out details. Thanks everyone for your support!
+<br><br>
+If you're a scripting app that has had issues with section 2.5.2 in the past, feel free to reach out. We'd love to to include your experience in our discussions with Apple.
+</div>
+</p>
+
 On Monday, October 26th, just four days after we launched iSH on the App Store, we received a call from Apple informing us that they had found our app noncompliant with section 2.5.2 of the App Store Review Guidelines and that they would remove the app from sale if we did not submit a satisfactory update within two weeks. Despite our best efforts, we do not believe we will be able to bring iSH into compliance by tomorrow, the conclusion of this 14 day period, and we expect iSH to no longer be available to download from the App Store after that time. We are working our hardest to get iSH back on the App Store as soon as possible and hope for your understanding and support as we navigate our next steps in this process.
 
 Thanks for using iSH!  

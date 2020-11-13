@@ -36,22 +36,26 @@ header {
     line-height: 32px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* flex-end */
+    justify-content: flex-end;
+}
 
-    /* --- */
+/* Notice */
+.banner {
+    justify-content: space-between;
     background-color: #32a852;
 }
 
-/* --- */
-.warning p {
+.notice p {
     padding: 0 0px 0 16px;
 }
-.warning a {
+
+.notice a {
     color: inherit;
     padding: 0 10px 0 10px;
     white-space: nowrap;
 }
-.warning a:hover {
+
+.notice a:hover {
     text-decoration: underline;
 }
 
@@ -331,14 +335,14 @@ footer p {
 @media only screen and (max-width: 750px) {
     header {
         justify-content: space-around;
-
-        /* --- */
+    }
+    .banner {
+        justify-content: center;
         flex-wrap: wrap;
         height: auto;
         align-items: center;
     }
-    .warning a, .warning p { padding: 0 }
-    .warning { margin-left: 0; }
+    .notice { margin-left: 0; }
     nav a {
         padding: 6px;
         width: 90px;

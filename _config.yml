@@ -4,6 +4,7 @@ description: >-
   iSH is a project to get a Linux shell environment running locally on your iOS device, using a usermode x86 emulator.
 url: "https://ish.app"
 baseurl: ""
+permalink: "/blog/:title"
 
 links:
     discord: "https://discord.gg/HFAXj44"

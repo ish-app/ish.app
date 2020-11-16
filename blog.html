@@ -1,0 +1,18 @@
+---
+layout: blog
+---
+<div class="top"></div>
+<div class="split">
+    <h1>{{ site.title }} Blog</h1>
+    <span><a href="/">Return home</a></span>
+</div>
+<hr>
+
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <h2>{{ post.date | date: "%Y-%m-%d" }} <a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <hr class="dashed" />
+        </li>
+    {% endfor %}
+</ul>

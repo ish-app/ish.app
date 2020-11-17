@@ -36,22 +36,26 @@ header {
     line-height: 32px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* flex-end */
+    justify-content: flex-end;
+}
 
-    /* --- */
+/* Notice */
+.banner {
+    justify-content: space-between;
     background-color: #32a852;
 }
 
-/* --- */
-.warning p {
+.notice p {
     padding: 0 0px 0 16px;
 }
-.warning a {
+
+.notice a {
     color: inherit;
     padding: 0 10px 0 10px;
     white-space: nowrap;
 }
-.warning a:hover {
+
+.notice a:hover {
     text-decoration: underline;
 }
 
@@ -65,7 +69,7 @@ nav a {
     color: inherit;
     padding: 8px;
     width: 100px;
-    transition: background .1s ease-in-out, box-shadow .3s, color .4s, border .5s;
+    transition: background .1s ease-in-out, color .4s, border .5s;
     margin-right: 12px;
     margin-left: 12px;
     font-size: 20px;
@@ -102,7 +106,8 @@ footer p {
 
 /* The large iSH icon */
 .icon {
-    height: 10em;
+    height: 190px;
+    width: 190px;
     border-radius: 32px;
     border: 2px solid #4b4d5c;
 }
@@ -129,7 +134,7 @@ footer p {
 
 .get img {
     height: 40px;
-    width: auto;
+    width: 40px;
     border-radius: 9px;
 }
 
@@ -329,16 +334,14 @@ footer p {
 
 /* Mobile optimisations */
 @media only screen and (max-width: 750px) {
-    header {
-        justify-content: space-around;
-
-        /* --- */
+    header { justify-content: space-around; }
+    .banner {
+        justify-content: center;
         flex-wrap: wrap;
         height: auto;
         align-items: center;
     }
-    .warning a, .warning p { padding: 0 }
-    .warning { margin-left: 0; }
+    .notice { margin-left: 0; }
     nav a {
         padding: 6px;
         width: 90px;
@@ -350,11 +353,10 @@ footer p {
         width: 100%;
     }
     .icon {
-      height: 140px;
+        height: 140px;
+        width: 140px;
     }
-    .iphone {
-      display: none;
-    }
+    .iphone { display: none; }
     .fronttext {
       flex-grow: 0;
       text-align: center;
@@ -363,40 +365,26 @@ footer p {
     .photo {
         max-width: 100%;
     }
-    .whidden {
-        display: none;
-    }
+    .whidden { display: none; }
     .ipad {
         width: 95%;
         height: auto;
     }
-    .block {
-        margin: 6px 0 6px 0;
-    }
-    .getcontainer {
-        flex-direction: column;
-    }
-    .expl {
-        display: block;
-    }
+    .block { margin: 6px 0 6px 0; }
+    .getcontainer { flex-direction: column; }
+    .expl { display: block; }
 }
 
 @media only screen and (max-height: 500px) {
-    .hhidden {
-        display: none;
-    }
+    .hhidden { display: none; }
 }
 
 @media only screen and (max-height: 600px) {
-    .downarrow {
-        display: none;
-    }
+    .downarrow { display: none; }
 }
 
 @media only screen and (max-width: 860px) {
-    .iphone {
-        display: none;
-    }
+    .iphone { display: none; }
 }
 
 @media only screen and (max-width: 400px) {

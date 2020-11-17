@@ -1,2 +1,3 @@
-http://alt.ish.app/* https://ish.app/altstore.json 302!
-https://alt.ish.app/* https://ish.app/altstore.json 302!
+http://alt.ish.app/*    https://ish.app/altstore.json 302!
+https://alt.ish.app/*   https://ish.app/altstore.json 302!
+/app-store-removal      /blog/app-store-removal

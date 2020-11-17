@@ -19,6 +19,22 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        {{ content }}
+        <header>
+            <nav>
+                <a href="/" style="text-decoration: none;">
+                    <div class="title">
+                        <img src="/assets/icon.png" />
+                        <p class="name">{{ site.title }}</p>
+                    </div>
+                </a>
+                <div>
+                    {% if page.layout == "post" %}<a href="/blog">Blog</a>{% endif %}
+                    <a href="{{ site.links.appstore }}">Download</a>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            {{ content }}
+        </div>
     </body>
 </html>

@@ -119,15 +119,4 @@ hr {
     .bubble {
         background-color: #e5e5e5;
     }
-
-    .top {
-        background-color: #343c7d;
-    }
-}
-
-@media only screen and (max-width: 400px) { 
-    .split {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 }

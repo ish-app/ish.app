@@ -1,6 +1,7 @@
 ---
 ---
-{%- assign release = site.github.latest_release -%}
+{%- assign release = site.github.releases | where: "prerelease", false | first -%}
+{%- assign asset = release.assets | where: "name", "iSH.ipa" -%}
 {
     "name": {{ site.title | jsonify }},
     "identifier": "app.ish.iSH",

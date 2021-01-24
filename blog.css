@@ -34,10 +34,10 @@ nav {
     justify-content: space-between;
     max-width: 50em;
     width: 100%;
+    padding: 0 20px 0 20px;
 }
 
 nav a {
-    margin-right: 12px;
     font-size: 20px;
 }
 

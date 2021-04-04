@@ -1,6 +1,6 @@
 /* Main stylesheet for ish.app */
 body {
-    background: #161616;
+    background-color: #161616;
     color: #fff;
     /* Noto Sans is Firefox default, looks better than sans-serif */
     font-family: 'Ubuntu','Noto Sans',sans-serif;
@@ -49,7 +49,7 @@ header {
 }
 
 .notice a {
-    color: white;
+    color: #fff;
     padding: 0 10px 0 10px;
     white-space: nowrap;
 }
@@ -65,7 +65,7 @@ nav {
 
 nav p {
     margin: 0;
-    color: white;
+    color: #fff;
 }
 
 nav a {
@@ -81,14 +81,19 @@ nav a {
 
 nav a:hover {
     background: rgba(255, 255, 255, 0.1);
-    border-color: white;
+    border-color: #fff;
     text-decoration: none;
+}
+
+footer a {
+    color: grey;
 }
 
 footer p {
     font-size: 20px;
     padding: 8px;
     margin: 0 0 0.5em 0;
+    color: darkgrey;
 }
 
 .home {
@@ -147,7 +152,7 @@ footer p {
     flex-grow: 1;
     font-size: 20px;
     margin: 0;
-    color: white;
+    color: #fff;
 }
 
 .get:hover {
@@ -191,7 +196,7 @@ footer p {
 }
 
 .downarrow svg {
-    fill: white;
+    fill: #fff;
     width: 48px;
     animation: bounce 2s ease-in-out 1.5s, fadeIn 1s ease-out;
 }
@@ -214,10 +219,9 @@ footer p {
     height: 100vh;
 }
 
-/* Light section */
 .lightsec {
-    background-color: #f1f1f1;
-    color: #161616;
+    background-color: #0f0f0f;
+    color: #fff;
     padding: 1px;
 }
 
@@ -400,11 +404,21 @@ footer p {
     }
 }
 
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-    .lightsec {
-        background-color: #0f0f0f;
+/* Light theme */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    a {
+        color: #2069bd;
+    }
+    .home {
         color: #fff;
+    }
+    .lightsec {
+        background-color: #f1f1f1;
+        color: #161616;
     }
 }
 

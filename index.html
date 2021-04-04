@@ -7,11 +7,11 @@ layout: default
             <p>We can put a banner here<strong><a href="/">Learn more &rarr;</a></strong></p>
         </div>-->
         <nav>
-            <a href="{{ site.links.github }}">GitHub</a>
+            <a href="{{ site.links.github }}"><p>GitHub</p></a>
             <div class="divider whidden"></div>
-            <a href="{{ site.links.discord }}" target="_blank" rel="noopener">Discord</a>
+            <a href="{{ site.links.discord }}" target="_blank" rel="noopener"><p>Discord</p></a>
             <div class="divider whidden"></div>
-            <a href="{{ site.links.twitter }}">Twitter</a>
+            <a href="{{ site.links.twitter }}"><p>Twitter</p></a>
         </nav>
     </header>
     <div class="front-container">
@@ -20,19 +20,15 @@ layout: default
             <h1>{{ site.title }}</h1>
             <h2>The Linux shell for iOS.</h2>
             <div class="actions">
-                <a href="{{ site.links.appstore }}">
-                    <div class="get">
-                        <img src="assets/appstore.svg" alt="App Store icon" />
-                        <p>Get on the App Store</p>
-                    </div>
+                <a class="get" href="{{ site.links.appstore }}">
+                    <img src="assets/appstore.svg" alt="App Store icon" />
+                    <p>Get on the App Store</p>
                 </a>
             </div>
             <div class="actions">
-                <a href="/altstore">
-                    <div class="get">
-                        <img src="assets/altstore.png" alt="AltStore logo" />
-                        <p>Get {{ site.title }} on AltStore</p>
-                    </div>
+                <a class="get" href="/altstore">
+                    <img src="assets/altstore.png" alt="AltStore logo" />
+                    <p>Get {{ site.title }} on AltStore</p>
                 </a>
             </div>
         </div>
@@ -104,11 +100,9 @@ layout: default
     <div class="getcontainer">
         <div>
             <div class="actions">
-                <a href="{{ site.links.appstore }}">
-                    <div class="get">
-                        <img src="assets/appstore.svg" alt="App Store icon" />
-                        <p>Get on the App Store</p>
-                    </div>
+                <a class="get" href="{{ site.links.appstore }}">
+                    <img src="assets/appstore.svg" alt="App Store icon" />
+                    <p>Get on the App Store</p>
                 </a>
             </div>
             <a href="{{ site.links.testflight }}">
@@ -118,11 +112,9 @@ layout: default
         <div class="midline whidden"></div>
         <div>
             <div class="actions">
-                <a href="/altstore">
-                    <div class="get">
-                        <img src="assets/altstore.png" alt="AltStore logo" />
-                        <p>Get {{ site.title }} on AltStore </p>
-                    </div>
+                <a class="get" href="/altstore">
+                    <img src="assets/altstore.png" alt="AltStore logo" />
+                    <p>Get {{ site.title }} on AltStore</p>
                 </a>
             </div>
             <a href="{{ site.links.github }}" class="">
@@ -138,5 +130,5 @@ layout: default
 
 <footer>
     <hr />
-    <p class="meds">{{ site.title }}, &copy; 2017–{{ 'now' | date: "%Y" }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p>{{ site.title }}, &copy; 2017–{{ 'now' | date: "%Y" }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 </footer>

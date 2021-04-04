@@ -16,12 +16,11 @@ h1, h2, p {
 a {
     color: #85beff;
     text-decoration: none;
-    transition: .5s color;
     outline: 0;
 }
 
 a:hover {
-    color: #4286f4;
+    text-decoration: underline;
 }
 
 hr {
@@ -31,7 +30,7 @@ hr {
 }
 
 header {
-    height: 64px;
+    height: 60px;
     width: 100%;
     line-height: 32px;
     display: flex;
@@ -50,7 +49,7 @@ header {
 }
 
 .notice a {
-    color: inherit;
+    color: white;
     padding: 0 10px 0 10px;
     white-space: nowrap;
 }
@@ -61,30 +60,35 @@ header {
 
 nav {
     display: inherit;
+    color: #4b4d5c;
+}
+
+nav p {
+    margin: 0;
+    color: white;
 }
 
 nav a {
     border: solid rgba(255, 255, 255, 0.1);
     border-width: 3px 0;
-    color: inherit;
-    padding: 8px;
+    padding: 6px 8px 6px 8px;
     width: 100px;
-    transition: background .1s ease-in-out, color .4s, border .5s;
-    margin-right: 12px;
-    margin-left: 12px;
+    color: rgba(255, 255, 255, 0.1);
+    transition: background .1s ease-in-out, border-color .2s;
+    margin: 0 12px 0 12px;
     font-size: 20px;
 }
 
 nav a:hover {
     background: rgba(255, 255, 255, 0.1);
-    border: 3px solid white;
-    border-width: 3px 0;
-    color: white;
+    border-color: white;
+    text-decoration: none;
 }
 
 footer p {
-    padding: 10px;
-    margin: 0;
+    font-size: 20px;
+    padding: 8px;
+    margin: 0 0 0.5em 0;
 }
 
 .home {
@@ -126,8 +130,8 @@ footer p {
     border: 2px solid #4b4d5c;
     background: #000;
     width: 280px;
-    color: #fff;
-    transition: all .15s ease-in-out;
+    color: #4b4d5c; /* otherwise border flashes blue on load */
+    transition: border-color .15s ease-in-out;
     padding: 0.4em;
     margin-bottom: 6px;
 }
@@ -143,11 +147,12 @@ footer p {
     flex-grow: 1;
     font-size: 20px;
     margin: 0;
+    color: white;
 }
 
 .get:hover {
-    transform: scale(1.03);
-    border: 2px solid #686a7d;
+    border-color: #686a7d;
+    text-decoration: none;
 }
 
 /* Primary text on front page */

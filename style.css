@@ -1,12 +1,12 @@
 /* Main stylesheet for ish.app */
 body {
-    background: #161616;
+    background-color: #161616;
     color: #fff;
     /* Noto Sans is Firefox default, looks better than sans-serif */
     font-family: 'Ubuntu','Noto Sans',sans-serif;
     text-align: center;
     margin: 0;
-    font-size: 1.17em;
+    font-size: 14pt;
 }
 
 h1, h2, p {
@@ -16,12 +16,11 @@ h1, h2, p {
 a {
     color: #85beff;
     text-decoration: none;
-    transition: .5s color;
     outline: 0;
 }
 
 a:hover {
-    color: #4286f4;
+    text-decoration: underline;
 }
 
 hr {
@@ -31,7 +30,7 @@ hr {
 }
 
 header {
-    height: 64px;
+    height: 60px;
     width: 100%;
     line-height: 32px;
     display: flex;
@@ -50,7 +49,7 @@ header {
 }
 
 .notice a {
-    color: inherit;
+    color: #fff;
     padding: 0 10px 0 10px;
     white-space: nowrap;
 }
@@ -61,30 +60,40 @@ header {
 
 nav {
     display: inherit;
+    color: #4b4d5c;
+}
+
+nav p {
+    margin: 0;
+    color: #fff;
 }
 
 nav a {
     border: solid rgba(255, 255, 255, 0.1);
     border-width: 3px 0;
-    color: inherit;
-    padding: 8px;
+    padding: 6px 8px 6px 8px;
     width: 100px;
-    transition: background .1s ease-in-out, color .4s, border .5s;
-    margin-right: 12px;
-    margin-left: 12px;
-    font-size: 20px;
+    color: rgba(255, 255, 255, 0.1);
+    transition: background .1s ease-in-out, border-color .2s;
+    margin: 0 12px 0 12px;
+    font-size: 15pt;
 }
 
 nav a:hover {
     background: rgba(255, 255, 255, 0.1);
-    border: 3px solid white;
-    border-width: 3px 0;
-    color: white;
+    border-color: #fff;
+    text-decoration: none;
+}
+
+footer a {
+    color: grey;
 }
 
 footer p {
-    padding: 10px;
-    margin: 0;
+    font-size: 15pt;
+    padding: 8px;
+    margin: 0 0 0.5em 0;
+    color: darkgrey;
 }
 
 .home {
@@ -126,8 +135,8 @@ footer p {
     border: 2px solid #4b4d5c;
     background: #000;
     width: 280px;
-    color: #fff;
-    transition: all .15s ease-in-out;
+    color: #4b4d5c; /* otherwise border flashes blue on load */
+    transition: border-color .15s ease-in-out;
     padding: 0.4em;
     margin-bottom: 6px;
 }
@@ -141,13 +150,14 @@ footer p {
 .get p {
     text-align: center;
     flex-grow: 1;
-    font-size: 20px;
+    font-size: 15pt;
     margin: 0;
+    color: #fff;
 }
 
 .get:hover {
-    transform: scale(1.03);
-    border: 2px solid #686a7d;
+    border-color: #686a7d;
+    text-decoration: none;
 }
 
 /* Primary text on front page */
@@ -158,7 +168,7 @@ footer p {
 }
 
 .fronttext h1 {
-    font-size: 48px;
+    font-size: 36pt;
     line-height: 48px;
 }
 
@@ -186,7 +196,7 @@ footer p {
 }
 
 .downarrow svg {
-    fill: white;
+    fill: #fff;
     width: 48px;
     animation: bounce 2s ease-in-out 1.5s, fadeIn 1s ease-out;
 }
@@ -209,10 +219,9 @@ footer p {
     height: 100vh;
 }
 
-/* Light section */
 .lightsec {
-    background-color: #f1f1f1;
-    color: #161616;
+    background-color: #0f0f0f;
+    color: #fff;
     padding: 1px;
 }
 
@@ -251,7 +260,7 @@ footer p {
 
 /* "Info" and "Getting iSH" sections */
 #info h1, #get h1 {
-    font-size: 36px;
+    font-size: 24pt;
     margin: 12px;
 }
 
@@ -329,7 +338,7 @@ footer p {
 }
 
 .meds {
-    font-size: 22px;
+    font-size: 16pt;
 }
 
 /* Mobile optimisations */
@@ -395,11 +404,21 @@ footer p {
     }
 }
 
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-    .lightsec {
-        background-color: #0f0f0f;
+/* Light theme */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    a {
+        color: #2069bd;
+    }
+    .home {
         color: #fff;
+    }
+    .lightsec {
+        background-color: #f1f1f1;
+        color: #161616;
     }
 }
 
@@ -425,7 +444,7 @@ footer p {
 }
 
 .step h2 {
-    font-size: 30px;
+    font-size: 22pt;
     margin: 0;
 }
 

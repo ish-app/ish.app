@@ -6,7 +6,7 @@ body {
     font-family: 'Ubuntu','Noto Sans',sans-serif;
     text-align: center;
     margin: 0;
-    font-size: 1.17em;
+    font-size: 14pt;
 }
 
 h1, h2, p {
@@ -76,7 +76,7 @@ nav a {
     color: rgba(255, 255, 255, 0.1);
     transition: background .1s ease-in-out, border-color .2s;
     margin: 0 12px 0 12px;
-    font-size: 20px;
+    font-size: 15pt;
 }
 
 nav a:hover {
@@ -90,7 +90,7 @@ footer a {
 }
 
 footer p {
-    font-size: 20px;
+    font-size: 15pt;
     padding: 8px;
     margin: 0 0 0.5em 0;
     color: darkgrey;
@@ -150,7 +150,7 @@ footer p {
 .get p {
     text-align: center;
     flex-grow: 1;
-    font-size: 20px;
+    font-size: 15pt;
     margin: 0;
     color: #fff;
 }
@@ -168,7 +168,7 @@ footer p {
 }
 
 .fronttext h1 {
-    font-size: 48px;
+    font-size: 36pt;
     line-height: 48px;
 }
 
@@ -260,7 +260,7 @@ footer p {
 
 /* "Info" and "Getting iSH" sections */
 #info h1, #get h1 {
-    font-size: 36px;
+    font-size: 24pt;
     margin: 12px;
 }
 
@@ -338,7 +338,7 @@ footer p {
 }
 
 .meds {
-    font-size: 22px;
+    font-size: 16pt;
 }
 
 /* Mobile optimisations */
@@ -444,7 +444,7 @@ footer p {
 }
 
 .step h2 {
-    font-size: 30px;
+    font-size: 22pt;
     margin: 0;
 }
 

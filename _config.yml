@@ -7,7 +7,7 @@ baseurl: ""
 permalink: "/blog/:title"
 
 links:
-    discord: "https://discord.gg/HFAXj44"
+    discord: "https://discord.gg/iSH" # "https://discord.gg/HFAXj44"
     github: "https://github.com/ish-app/ish"
     testflight: "https://testflight.apple.com/join/97i7KM8O"
     reddit: "https://ish.reddit.com"

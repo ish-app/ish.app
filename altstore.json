@@ -20,8 +20,8 @@
             "version": {{ release.name | jsonify }},
             "versionDate": {{ release.created_at | date_to_xmlschema | jsonify }},
             "versionDescription": {{ release.body | jsonify }},
-            "downloadURL": {{ release.assets[0].browser_download_url | jsonify }},
-            "size": {{ release.assets[0].size | jsonify }}
+            "downloadURL": {{ asset[0].browser_download_url | jsonify }},
+            "size": {{ asset[0].size | jsonify }}
         }
     ],
     "userInfo": {}

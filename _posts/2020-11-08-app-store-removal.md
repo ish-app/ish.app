@@ -5,9 +5,7 @@ created: 2020-11-08
 author:
 ---
 
-<p><div class="bubble">
-<strong><span style="color: #32a852">Update</span></strong>: We got a call this evening from someone who runs App Review. They apologized for the experience we had, then told us they've accepted our appeal and won't be removing iSH from the store tomorrow. We'll stay in contact with them to work out details. Thanks everyone for your support!
-</div></p>
+{% include aside.html type="Update" content="We got a call this evening from someone who runs App Review. They apologized for the experience we had, then told us they've accepted our appeal and won't be removing iSH from the store tomorrow. We'll stay in contact with them to work out details. Thanks everyone for your support!" %}
 
 On Monday, October 26th, just four days after we launched iSH on the App Store, we received a call from Apple informing us that they had found our app noncompliant with section 2.5.2 of the App Store Review Guidelines and that they would remove the app from sale if we did not submit a satisfactory update within two weeks. Despite our best efforts, we do not believe we will be able to bring iSH into compliance by tomorrow, the conclusion of this 14 day period, and we expect iSH to no longer be available to download from the App Store after that time. We are working our hardest to get iSH back on the App Store as soon as possible and hope for your understanding and support as we navigate our next steps in this process.
 
@@ -33,6 +31,4 @@ Removal of iSH’s listing on the App Store should not affect your use of iSH if
 
 Precompiled builds of iSH (distributed as IPA files) will [remain available on GitHub](https://github.com/ish-app/ish/releases) for [installation through AltStore](https://ish.app/altstore) and for jailbroken users. Advanced users are welcome to [build iSH](https://github.com/ish-app/ish#build-for-ios) themselves—it’s free and open source and always will be!
 
-<p><div class="bubble">
-<strong><span style="color: #32a852">Update</span>: <a href="https://twitter.com/a_Shell_iOS/status/1325526061099196416">a-Shell has mentioned</a> that they have received a similar rejection notice. Apple may be running extra review for scripting apps.</strong>
-</div></p>
+{% include aside.html type="Update" content="**[a-Shell has mentioned](https://twitter.com/a_Shell_iOS/status/1325526061099196416) that they have received a similar rejection notice. Apple may be running extra review for scripting apps.**" %}

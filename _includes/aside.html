@@ -1,0 +1,32 @@
+{% if include.type == nil %}
+    {% assign type="Note" %}
+{% elsif include.type == "Update" %}
+    {% if include.date %}
+        {% assign type=include.type | append: ", " | append: include.date %}
+    {% else %}
+        {% assign type=include.type %}
+    {% endif %}
+    {% assign update=true %}
+{% else %}
+    {% assign type=include.type %}
+    {% assign update=false %}
+{% endif %}
+{::options parse_block_html="true" /}
+{% if update %}
+<aside class="aside-update">
+{% elsif type == "Warning" %}
+<aside class="aside-warning">
+{% elsif type == "Disclaimer" %}
+<aside class="aside-disclaimer">
+{% elsif type == "Fun fact" %}
+<aside class="aside-fun-fact">
+{% else %}
+<aside>
+{% endif %}
+{: .aside-content }
+{% if include.type != "" %}
+<span>{{ type }}</span>: {{ include.content }}
+{% else %}
+{{ include.content }}
+{% endif %}
+</aside>

@@ -91,12 +91,26 @@ ul h2 {
     border-top: 1px dashed grey;
 }
 
-.bubble {
+aside {
     background-color: #1f1f1f;
+    border-left: 4px solid grey;
     padding: 14px;
     border-radius: 4px;
-    border-left: 4px solid green;
+    margin-bottom: 15px;
 }
+
+aside span { font-weight: bold }
+.aside-content { margin: 0 }
+
+.aside-update     { border-left: 4px solid green }
+.aside-warning    { border-left: 4px solid orange }
+.aside-disclaimer { border-left: 4px solid #eb152e }
+.aside-fun-fact   { border-left: 4px solid #34a8eb }
+
+.aside-update span     { color: #32a852 }
+.aside-warning span    { color: orange }
+.aside-disclaimer span { color: #eb152e }
+.aside-fun-fact span   { color: #34a8eb }
 
 hr {
     border: 1px solid grey;
@@ -116,7 +130,7 @@ hr {
         border: 1px solid #aaa;
     }
 
-    .bubble {
+    aside {
         background-color: #e5e5e5;
     }
 }

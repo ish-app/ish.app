@@ -353,8 +353,8 @@ footer p {
     .notice { margin-left: 0; }
     nav a {
         padding: 6px;
-        width: 90px;
-        margin: 8px;
+        width: 80px;
+        margin: 6px;
     }
     .front-container {
         flex-direction: column;
@@ -396,11 +396,12 @@ footer p {
     .iphone { display: none; }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) { /* smol */
     nav a {
-        padding: 4px;
-        width: 80px;
-        margin: 5px;
+        padding: 2px 8px 2px 8px;
+        width: auto;
+        margin: 4px;
+        font-size: 13.5pt;
     }
 }
 

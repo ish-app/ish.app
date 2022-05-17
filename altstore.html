@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{%- assign release = site.github.releases | where: "prerelease", false | first -%}
+{%- assign release = site.github.releases | first -%}
 {%- assign asset = release.assets | where: "name", "iSH.ipa" -%}
 <section class="home">
     <div class="altcontainer">

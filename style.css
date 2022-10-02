@@ -1,9 +1,17 @@
-/* Main stylesheet for ish.app */
+:root {
+    --ish-primary: #20233c;
+    --ish-secondary: #0f1121;
+    --ish-blue: #85beff;
+    --ish-purple: #636cc2;
+    --background: #161616;
+    --background-alt: #0a0a0a;
+    --accent: #2d2d2d;
+}
+
 body {
-    background-color: #161616;
+    background-color: var(--background);
     color: #fff;
-    /* Noto Sans is Firefox default, looks better than sans-serif */
-    font-family: 'Ubuntu','Noto Sans',sans-serif;
+    font-family: "Ubuntu", "Noto Sans", sans-serif;
     text-align: center;
     margin: 0;
     font-size: 14pt;
@@ -14,7 +22,7 @@ h1, h2, p {
 }
 
 a {
-    color: #85beff;
+    color: var(--ish-blue);
     text-decoration: none;
     outline: 0;
 }
@@ -101,6 +109,8 @@ footer p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(170deg, var(--ish-primary), var(--ish-secondary));
+    height: 100vh;
 }
 
 /* Contains entire front page */
@@ -214,13 +224,8 @@ footer p {
     100% { opacity: 1; }
 }
 
-.home {
-    background: linear-gradient(170deg, #20233c, #0f1121);
-    height: 100vh;
-}
-
 .lightsec {
-    background-color: #0f0f0f;
+    background-color: var(--background-alt);
     color: #fff;
     padding: 1px;
 }
@@ -407,18 +412,19 @@ footer p {
 
 /* Light theme */
 @media (prefers-color-scheme: light) {
-    body {
-        background-color: #fff;
-        color: #000;
+    :root {
+        --background: #ffffff;
+        --background-alt: #f1f1f1;
+        --ish-blue: #0055b6;
+        --accent: #dadada;
     }
-    a {
-        color: #2069bd;
+    body {
+        color: #000;
     }
     .home {
         color: #fff;
     }
     .lightsec {
-        background-color: #f1f1f1;
         color: #161616;
     }
 }

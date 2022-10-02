@@ -43,45 +43,44 @@ header {
     line-height: 32px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 nav {
     display: inherit;
-    color: #4b4d5c;
-}
-
-nav p {
-    margin: 0;
-    color: #fff;
 }
 
 nav a {
-    border: solid rgba(255, 255, 255, 0.1);
-    border-width: 3px 0;
-    padding: 6px 8px 6px 8px;
-    width: 100px;
-    color: rgba(255, 255, 255, 0.1);
-    transition: background .1s ease-in-out, border-color .2s;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0 8px 0 8px;
+    width: 140px;
     margin: 0 12px 0 12px;
-    font-size: 15pt;
+    border-radius: 8px;
+    transition: background .05s ease-in-out, border-color .2s;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: white;
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
+    border-color: #fff;
+}
+
+footer {
+    margin-top: 8px;
+    background-color: var(--ish-primary);
 }
 
 footer a {
-    color: grey;
+    color: #aaa;
 }
 
 footer p {
     font-size: 15pt;
-    padding: 8px;
-    margin: 0 0 0.5em 0;
-    color: darkgrey;
+    padding: 12px;
+    margin: 0;
+    color: #ddd;
 }
 
 .home {
@@ -282,15 +281,8 @@ section h1 {
 /* Mobile optimisations */
 @media only screen and (max-width: 750px) {
     header { justify-content: space-around; }
-    .banner {
-        justify-content: center;
-        flex-wrap: wrap;
-        height: auto;
-        align-items: center;
-    }
-    .notice { margin-left: 0; }
     nav a {
-        padding: 6px;
+        padding: 0 5px 0 5px;
         width: 80px;
         margin: 6px;
     }
@@ -324,10 +316,6 @@ section h1 {
 
 @media only screen and (max-height: 500px) {
     .hhidden { display: none; }
-}
-
-@media only screen and (max-height: 600px) {
-    .downarrow { display: none; }
 }
 
 @media only screen and (max-width: 860px) {

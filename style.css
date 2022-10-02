@@ -89,7 +89,7 @@ footer p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(170deg, var(--ish-primary), var(--ish-secondary));
+    background: linear-gradient(180deg, var(--ish-primary), var(--ish-secondary));
     height: 100vh;
 }
 

@@ -14,6 +14,7 @@ links:
     twitter: "https://twitter.com/iSH_app"
     altstore: "altstore://source?url=https://ish.app/altstore.json"
     appstore: "https://apps.apple.com/us/app/ish-shell/id1436902243"
+    patreon: "https://patreon.com/tbodt"
 
 repository: ish-app/ish # for jekyll/github-metadata
 markdown: kramdown

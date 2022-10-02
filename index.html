@@ -33,15 +33,14 @@ layout: default
             <source type="image/webp" srcset="assets/front-iphone.webp">
             <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/front-iphone-dark.png">
             <source type="image/png" srcset="assets/front-iphone.png">
-            <img class="iphone whidden" src="assets/front-iphone.png" alt="iSH running on an iPhone">
+            <img class="iphone" src="assets/front-iphone.png" alt="iSH running on an iPhone">
         </picture>
     </div>
 </section>
 
 <section id="info" class="alt-section">
-    <h1>Wait, what's {{ site.title }}?</h1>
-    <hr />
-    <p class="meds">
+    <h1><strong>Wait, what's {{ site.title }}?</strong></h1>
+    <p>
         {{ site.title }} is a project to get a Linux shell environment running locally on your iOS device, using a usermode x86 emulator.
     </p>
     <div class="expl">
@@ -85,8 +84,7 @@ layout: default
 </section>
 
 <section id="get">
-    <h1>Sounds cool, can I get that?</h1>
-    <hr />
+    <h1><strong>Sounds cool, can I get that?</strong></h1>
     <p>Of course, let's get started!</p>
     <div class="getcontainer">
         <div>
@@ -97,10 +95,10 @@ layout: default
                 </a>
             </div>
             <a href="{{ site.links.testflight }}">
-                <p class="other">Join the TestFlight Beta</p>
+                <p class="mini-dl">Join the TestFlight Beta</p>
             </a>
         </div>
-        <div class="midline whidden"></div>
+        <div class="midline"></div>
         <div>
             <div class="actions">
                 <a class="get" href="/altstore">
@@ -109,13 +107,28 @@ layout: default
                 </a>
             </div>
             <a href="{{ site.links.github }}" class="">
-                <p class="other">Build {{ site.title }} from source</p>
+                <p class="mini-dl">Build {{ site.title }} from source</p>
             </a>
         </div>
     </div>
     <div class="bottomtext">
-        <p>Join our <a href="{{ site.links.discord }}">Discord server</a> if you have any questions or concerns, or you just want to chat! There's also a <a href="{{ site.links.reddit }}">subreddit</a> for discussions and a <a href="{{ site.links.twitter }}">Twitter</a>.</p>
-        <p>You can also become a <a href="https://patreon.com/tbodt">patron</a> if you would like support {{ site.title }}. Donations are very much appreciated, but will never be required; the app will always be completely free.</p>
+        <p>You can <a href="{{ site.links.patreon }}">become a patron</a> if you would like support {{ site.title }}. Donations are very much appreciated, but will never be required; the app will always be completely free.</p>
+    </div>
+</section>
+
+<section class="feed">
+    <div class="version">
+        {%- assign prerelease = site.github.releases | where: "prerelease", true | first -%}
+        <h2>New in <strong>{{ site.github.latest_release.name }}</strong></h2>
+        <div class="changelog"><p>{{ site.github.latest_release.body }}</p></div>
+        <p>Latest pre-release: <a href="{{ prerelease.html_url }}">{{ prerelease.name }}</a></p>
+    </div>
+    <div class="posts">
+        <h2><strong>Latest blog posts</strong></h2>
+        {% for post in site.posts limit:3 %}
+            <p>{{ post.date | date: "%Y-%m-%d" }} <a href="{{ post.url }}">{{ post.title }}</a></p>
+        {% endfor %}
+        <p><a href="/blog">View all</a></p>
     </div>
 </section>
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section id="home" class="home">
+<section id="home">
     <header>
         <nav>
             <a href="{{ site.links.github }}">GitHub</a>
@@ -11,7 +11,7 @@ layout: default
         </nav>
     </header>
     <div class="front-container">
-        <img src="assets/icon.png" alt="iSH icon" class="icon hhidden" />
+        <img src="assets/icon.png" alt="{{ site.title }} icon" class="icon hhidden" />
         <div class="title">
             <h1>{{ site.title }}</h1>
             <h2>The Linux shell for iOS.</h2>
@@ -33,7 +33,7 @@ layout: default
             <source type="image/webp" srcset="assets/front-iphone.webp">
             <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/front-iphone-dark.png">
             <source type="image/png" srcset="assets/front-iphone.png">
-            <img class="iphone" src="assets/front-iphone.png" alt="iSH running on an iPhone">
+            <img class="iphone" src="assets/front-iphone.png" alt="{{ site.title }} running on an iPhone">
         </picture>
     </div>
 </section>
@@ -46,14 +46,14 @@ layout: default
     <div class="tidbits">
         <div class="tidbit large">
             <h2>iPadOS? You bet.</h2>
-            <p>{{ site.title }} also runs on iPad, bring a terminal to larger displays as well.</p>
+            <p>{{ site.title }} also runs on iPad, bringing a terminal to larger displays as well.</p>
             <div class="growth"></div>
             <picture>
                 <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="assets/front-ipad-dark.webp">
                 <source type="image/webp" srcset="assets/front-ipad.webp">
                 <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/front-ipad-dark.png">
                 <source type="image/png" srcset="assets/front-ipad.png">
-                <img class="ipad" src="assets/front-ipad.png" alt="iSH running on an iPad">
+                <img class="ipad" src="assets/front-ipad.png" alt="{{ site.title }} running on an iPad">
             </picture>
             <div class="growth"></div>
         </div>
@@ -74,7 +74,7 @@ layout: default
             <picture>
                 <source type="image/webp" srcset="assets/iphone-keyboard.webp">
                 <source type="image/png" srcset="assets/iphone-keyboard.png">
-                <img src="assets/iphone-keyboard.png" alt="The iSH keyboard addition as seen on an iPhone">
+                <img src="assets/iphone-keyboard.png" alt="The {{ site.title }} keyboard addition as seen on an iPhone">
             </picture>
         </div>
     </div>

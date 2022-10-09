@@ -17,9 +17,7 @@ body {
     font-size: 13pt;
 }
 
-h1, h2 {
-    font-weight: 400;
-}
+h1, h2 { font-weight: 400; }
 
 a {
     color: var(--ish-blue);
@@ -27,9 +25,7 @@ a {
     outline: 0;
 }
 
-a:hover {
-    text-decoration: underline;
-}
+a:hover { text-decoration: underline; }
 
 hr {
     border: 0;
@@ -46,9 +42,7 @@ header {
     justify-content: center;
 }
 
-nav {
-    display: inherit;
-}
+nav { display: inherit; }
 
 nav a {
     background-color: rgba(255, 255, 255, 0.1);
@@ -72,9 +66,7 @@ footer {
     background-color: var(--ish-primary);
 }
 
-footer a {
-    color: #aaa;
-}
+footer a { color: #aaa; }
 
 footer p {
     font-size: 14pt;
@@ -83,7 +75,7 @@ footer p {
     color: #ddd;
 }
 
-.home {
+#home {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -107,7 +99,7 @@ footer p {
     height: 190px;
     width: 190px;
     border-radius: 32px;
-    border: 2px solid #4b4d5c;
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Fancy Get buttons */
@@ -121,8 +113,9 @@ footer p {
     display: flex;
     align-items: center;
     border-radius: 16px;
-    border: 2px solid #4b4d5c;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     background: #000;
+    background-clip: padding-box; /* border colour alphaing to button's background */
     width: 280px;
     color: #4b4d5c; /* otherwise border flashes blue on load */
     transition: border-color .15s ease-in-out;
@@ -145,7 +138,7 @@ footer p {
 }
 
 .get:hover {
-    border-color: #686a7d;
+    border-color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
 }
 
@@ -160,9 +153,7 @@ footer p {
     line-height: 48px;
 }
 
-.title h1, .title h2 {
-    margin: 10px 0 10px 0;
-}
+.title h1, .title h2 { margin: 10px 0 10px 0; }
 
 .iphone {
     height: auto;
@@ -176,7 +167,7 @@ footer p {
     padding: 1px;
 }
 
-section h1 {
+section > h1 {
     font-size: 22pt;
     margin: 20px 0 0 0;
 }
@@ -186,9 +177,7 @@ section > p {
     margin-top: 8px;
 }
 
-#info > p {
-    margin-bottom: 0;
-}
+#info > p { margin-bottom: 0; }
 
 .getcontainer {
     display: flex;
@@ -205,11 +194,9 @@ section > p {
     margin: 0 auto;
 }
 
-.tidbit.large {
-    grid-row-end: span 2;
-}
+.tidbit.large { grid-row-end: span 2; }
 
-.tidbit {
+.tidbit, #altstore-container {
     box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.3);
     background-color: var(--background);
     border: 2px solid var(--accent);
@@ -217,8 +204,11 @@ section > p {
     padding: 12px;
 }
 
-.tidbit p { margin: 4px 0 12px 0 }
-.tidbit h2 { margin: 4px 0 0 0; color: var(--ish-purple) }
+.tidbit p { margin: 4px 0 12px 0; }
+.tidbit h2 {
+    margin: 4px 0 0 0;
+    color: var(--ish-purple);
+}
 
 .tidbit img {
     max-width: 95%;
@@ -242,9 +232,7 @@ section > p {
     transition: .4s transform;
 }
 
-.mini-dl {
-    margin: 12px;
-}
+.mini-dl { margin: 12px; }
 
 .bottomtext {
     text-align: left;
@@ -272,7 +260,7 @@ section > p {
 .version {
     background-color: #1f1f1f;
     border-radius: 10px;
-    box-shadow: 0 0 0 2px #2d2d2d inset; /* An inset allows for both titles to align */
+    box-shadow: 0 0 0 2px var(--accent) inset; /* An inset allows for both titles to align */
 }
 
 .changelog p {
@@ -293,9 +281,9 @@ section > p {
     margin: 0 12px 0 12px;
 }
 
-.posts { text-align: left }
-.posts h2 { margin-bottom: 0 }
-.posts p { margin: 2px 0 0 2px }
+.posts { text-align: left; }
+.posts h2 { margin-bottom: 0; }
+.posts p { margin: 2px 0 0 2px; }
 
 .midline {
     border-left: 2px solid var(--accent);
@@ -304,9 +292,7 @@ section > p {
     display: inline-block;
 }
 
-.feed h2 {
-    font-size: 16pt;
-}
+.feed h2 { font-size: 16pt; }
 
 /* Mobile optimisations */
 @media only screen and (max-width: 750px) {
@@ -327,9 +313,9 @@ section > p {
     }
     .iphone, .midline { display: none; }
     .title {
-      flex-grow: 0;
-      text-align: center;
-      margin: 2em 0 0 0;
+        flex-grow: 0;
+        text-align: center;
+        margin: 2em 0 0 0;
     }
     .ipad { max-width: 80% !important; }
     .block { margin: 6px 0 6px 0; }
@@ -361,16 +347,14 @@ section > p {
 }
 
 /* AltStore page */
-.altcontainer {
+#altstore-container {
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-items: center;
     max-width: 600px;
-    margin: 0px auto;
+    margin: 20px auto;
     padding: 20px;
-    height: 100%;
-    background-color: #0f0f0f;
+    gap: 4px;
 }
 
 .step {
@@ -405,11 +389,16 @@ section > p {
         --ish-blue: #0055b6;
         --accent: #dadada;
     }
-    body, .alt-section { color: #000; }
-    .home { color: #fff; }
+    body, .alt-section, #altstore-container { color: #000; }
+    #home { color: #fff; }
     .tidbit {
         border: 2px solid var(--accent);
         background-color: var(--background);
         box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.1);
     }
+    .version {
+        background-color: var(--background-alt);
+        box-shadow: 0 0 0 2px var(--accent) inset;
+    }
+    .number { background-color: rgba(0, 0, 0, 0.1); }
 }

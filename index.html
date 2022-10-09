@@ -43,8 +43,11 @@ layout: default
     <p>
         {{ site.title }} is a project to get a Linux shell environment running locally on your iOS device, using a usermode x86 emulator.
     </p>
-    <div class="expl">
-        <div>
+    <div class="tidbits">
+        <div class="tidbit large">
+            <h2>iPadOS? You bet.</h2>
+            <p>{{ site.title }} also runs on iPad, bring a terminal to larger displays as well.</p>
+            <div class="growth"></div>
             <picture>
                 <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="assets/front-ipad-dark.webp">
                 <source type="image/webp" srcset="assets/front-ipad.webp">
@@ -52,33 +55,27 @@ layout: default
                 <source type="image/png" srcset="assets/front-ipad.png">
                 <img class="ipad" src="assets/front-ipad.png" alt="iSH running on an iPad">
             </picture>
-            <p>...and it works on iPad, too!</p>
+            <div class="growth"></div>
         </div>
-        <div class="info">
-            <div class="infobox">
-                <p class="meds">BusyBox</p>
-                <p>You can edit files with sed and cat, move them around, and more!</p>
-                <picture>
-                    <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="assets/iphone-busybox-dark.webp">
-                    <source type="image/webp" srcset="assets/iphone-busybox.webp">
-                    <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/iphone-busybox-dark.png">
-                    <source type="image/png" srcset="assets/iphone-busybox.png">
-                    <img class="boxpict" src="assets/iphone-busybox.png" alt="Starting BusyBox on an iPhone">
-                </picture>
-            </div>
-            <div class="infobox">
-                <p class="meds">The Keyboard</p>
-                <p>
-                    {{ site.title }}'s keyboard addition makes navigation easier.
-                    <br />
-                    Here's what the buttons do:
-                </p>
-                <picture>
-                    <source type="image/webp" srcset="assets/iphone-keyboard.webp">
-                    <source type="image/png" srcset="assets/iphone-keyboard.png">
-                    <img class="boxpict" src="assets/iphone-keyboard.png" alt="The iSH keyboard addition on an iPhone">
-                </picture>
-            </div>
+        <div class="tidbit">
+            <h2>BusyBox</h2>
+            <p>You can edit files with sed and cat, move them around, and more!</p>
+            <picture>
+                <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="assets/iphone-busybox-dark.webp">
+                <source type="image/webp" srcset="assets/iphone-busybox.webp">
+                <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/iphone-busybox-dark.png">
+                <source type="image/png" srcset="assets/iphone-busybox.png">
+                <img src="assets/iphone-busybox.png" alt="Starting BusyBox on an iPhone">
+            </picture>
+        </div>
+        <div class="tidbit">
+            <h2>Keyboard CTRL</h2>
+            <p>{{ site.title }}'s keyboard addition makes navigation easier.</p>
+            <picture>
+                <source type="image/webp" srcset="assets/iphone-keyboard.webp">
+                <source type="image/png" srcset="assets/iphone-keyboard.png">
+                <img src="assets/iphone-keyboard.png" alt="The iSH keyboard addition as seen on an iPhone">
+            </picture>
         </div>
     </div>
 </section>

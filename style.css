@@ -149,8 +149,7 @@ footer p {
     text-decoration: none;
 }
 
-/* Primary text on front page */
-.title {
+.title { /* primary text on front page */
     text-align: left;
     flex-grow: 1;
     margin: 0 2em 0 2em;
@@ -171,58 +170,24 @@ footer p {
     max-height: 75vh;
 }
 
-.ipad {
-    height: auto;
-    width: 80%;
-}
-
 .alt-section {
     background-color: var(--background-alt);
     color: #fff;
     padding: 1px;
 }
 
-.expl {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.infobox {
-    width: 80%;
-    background-color: #262626;
-    color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.75);
-    padding: 12px;
-    margin-bottom: 16px;
-}
-
-.infobox .meds,
-.infobox p {
-    margin: 4px;
-}
-
-.boxpict {
-    width: 100%;
-    height: auto;
-}
-
-/* "Info" and "Getting iSH" sections */
 section h1 {
     font-size: 22pt;
     margin: 20px 0 0 0;
 }
 
 section > p {
-    padding: 0 8px;
+    padding: 0 12px;
+    margin-top: 8px;
+}
+
+#info > p {
+    margin-bottom: 0;
 }
 
 .getcontainer {
@@ -231,20 +196,43 @@ section > p {
     align-items: center;
 }
 
-.block {
-    display: flex;
-    width: 300px;
-    height: 260px;
-    background-color: #262626;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
-    padding: 12px;
-    display: inline;
+.tidbits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.block img {
-    margin-top: 12px;
+.tidbit.large {
+    grid-row-end: span 2;
 }
+
+.tidbit {
+    box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.3);
+    background-color: var(--background);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.tidbit p { margin: 4px 0 12px 0 }
+.tidbit h2 { margin: 4px 0 0 0; color: var(--ish-purple) }
+
+.tidbit img {
+    max-width: 95%;
+    width: 95%;
+    vertical-align: middle;
+}
+
+.tidbit.large {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.growth { flex-grow: 1; }
 
 .actions svg {
     width: 40px;
@@ -310,7 +298,7 @@ section > p {
 .posts p { margin: 2px 0 0 2px }
 
 .midline {
-    border-left: 1px solid #616161;
+    border-left: 2px solid var(--accent);
     height: 80px;
     margin: 0 30px 0 30px;
     display: inline-block;
@@ -343,26 +331,16 @@ section > p {
       text-align: center;
       margin: 2em 0 0 0;
     }
-    .photo {
-        max-width: 100%;
-    }
-    .ipad {
-        width: 95%;
-        height: auto;
-    }
+    .ipad { max-width: 80% !important; }
     .block { margin: 6px 0 6px 0; }
     .getcontainer { flex-direction: column; }
-    .expl { display: block; }
-
-    .feed {
-        flex-direction: column;
+    .tidbits {
+        grid-template-columns: auto;
+        max-width: 500px;
     }
-    .feed div {
-        width: auto;
-    }
-    .posts h2 {
-        margin: 0;
-    }
+    .feed { flex-direction: column; }
+    .feed div { width: auto; }
+    .posts h2 { margin: 0; }
 }
 
 @media only screen and (max-height: 500px) {
@@ -427,13 +405,11 @@ section > p {
         --ish-blue: #0055b6;
         --accent: #dadada;
     }
-    body {
-        color: #000;
-    }
-    .home {
-        color: #fff;
-    }
-    .alt-section {
-        color: #161616;
+    body, .alt-section { color: #000; }
+    .home { color: #fff; }
+    .tidbit {
+        border: 2px solid var(--accent);
+        background-color: var(--background);
+        box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.1);
     }
 }

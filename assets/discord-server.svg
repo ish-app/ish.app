@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="300" width="600" viewBox="0 0 600 300">
+  <pattern id="server_icon" x="0" y="0" width="64" height="64">
+    <image x="-1" y="-1" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcwAAAHMCAIAAADXuQ/RAAAJTElEQVR4nOzcMWvk1cLH8cdnBwk4xRQWFitMuYLFvgMXrMMMWKid70AFG7FYe4ttttDObm1kVyJYCeYFCCkEtcofTJFyirkQJJKL3uI2bhwv+Xqi+XzqA/8fh/ANnGL+//8AyIgsQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUKz0QO4We7cufP6668PHPDZZ5/9+OOPAwcAhNbr9cVQq9Vq9B1ws3guAAiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQg9M3oAN8tisVgulwMHTNO02WwGDgAAroznAoCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCM1GD+AKfPXVVy+88MKor3/zzTfvvvvujofv3bv34MGDeNFl3nnnncPDwx0PP3jw4N69e/Gipzo5Odnf39/x8O3btw8ODuJFl/n4448/+eSTgQOuLZH9J7hz587AH2mdpmn3w4vF4u7du+WcPx6w++Hlcjlw7Z+aOpvNxl7swH/z15znAoCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxCajR7AFfjXb0Z9/ezsbPfDv/zyy8Cp/xmw++GzszMXu6Off/554NcBuKE8FwCERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQMhPHf6+vd8MHLDZbAZ+vTObzebz+cAB2+32/Px84ADgV/fv378Yarlcjr6DxHq9Hnuxq9Vq9B1ws3guAAiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQjNRg+4po6Ojj799NOBA7bb7cCvd05OTsZe7DRNA78OAFwlzwUAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxDyU4f/BK+99tp8Ph/19ZOTk6+//nrHw7dv33711VfjRZc5PDzc/dcOX3nlleVyGS96qu12+/nnn4/6OvBfx8fHF+M8fvx496nr9Xrg1IuLi9Vqtfvax48fD5x6fHz8P/05cL14LgAIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIzUYP4Aq899578/l81Nenadr98NHR0VtvvVXO+QPffvvt7ocfPnz45MmTcs5lttvtqE8DwN+D5wKAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQj5qUP+Unfv3n377bcHDnj48OGf+rXDv4vnn3/+o48+GjjgyZMnX3zxxcABwK/W6/XFUKvVavQdJJbL5diLvX///ug7uKY8FwCERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKEnhk9gJtlNpvN5/OBA7bb7fn5+cABncViMfDrZ78ZOACAm8hzAUBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChGajB1xT77///gcffDBwwEsvvfTTTz/tePj7779/8cUX40VPdXBw8Oabb+54eH9//9GjR/Giy7zxxhtffvnljocfPXq0v78fL3qqaZpefvnlUV/nqojs73v22Wefe+65gQNu3bq1++G9vb2Ba/f29nY/fOvWLRe7o7EXxVXxXAAQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCIgsQElmAkMgChEQWICSyACGRBQiJLEBIZAFCs9EDrqnT09Ojo6OBA87Pz3c//N133202m3LOZaZp2v3wZrMZe7F/6qKmaRq49vT0dNSnAeDvwXMBQEhkAUIiCxASWYCQyAKERBYgJLIAIZEFCIksQEhkAUIiCxASWYCQyAKE/NQhf6nFYrFcLgcOmKZp4M9CArTW6/XFUKvVavQdcLN4LgAIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIzUYP4Gb54YcfPvzww7EDBn4dALhKngsAQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEBJZgJDIAoREFiAksgAhkQUIiSxASGQBQiILEPp3AAAA//8cbWLQ2pTYwAAAAABJRU5ErkJggg=="/>
+  </pattern>
+  <rect fill="#202225" height="300" width="50" x="0" y="0" rx="0" ry="0"/>
+  <rect fill="#2f3136" height="300" width="150" x="49" y="0" rx="0" ry="0"/>
+  <rect fill="#36393f" height="300" width="250" x="198" y="0" rx="0" ry="0"/>
+  <rect fill="#2f3136" height="300" width="150" x="447" y="0" rx="0" ry="0"/>
+  <circle fill="#36393f" r="14" cx="24" cy="22"/>
+  <circle fill="#36393f" r="14" cx="24" cy="60"/>
+  <circle fill="url(#server_icon)" r="14" cx="24" cy="94"/>
+  <circle fill="#36393f" r="14" cx="24" cy="128"/>
+  <rect fill="#36393f" height="2" width="20" x="14" y="40" rx="1" ry="1"/>
+  <rect fill="#36393f" height="17" width="125" x="60" y="10" rx="4" ry="4"/>
+  <rect fill="#36393f" height="17" width="125" x="60" y="35" rx="4" ry="4"/>
+  <rect fill="#36393f" height="17" width="125" x="60" y="60" rx="4" ry="4"/>
+  <rect fill="#36393f" height="17" width="125" x="60" y="85" rx="4" ry="4"/>
+  <rect fill="#36393f" height="17" width="125" x="60" y="110" rx="4" ry="4"/>
+  <rect fill="#36393f" height="17" width="125" x="60" y="135" rx="4" ry="4"/>
+  <rect fill="#40444b" height="20" width="227" x="210" y="270" rx="4" ry="4"/>
+  <g>
+    <circle fill="#40444b" r="9" cx="465" cy="20"/>
+    <rect fill="#40444b" height="5" width="100" x="480" y="14" rx="2" ry="2"/>
+    <rect fill="#40444b" height="2" width="70" x="480" y="24" rx="1" ry="1"/>
+  </g>
+  <g>
+    <circle fill="#40444b" r="9" cx="465" cy="45"/>
+    <rect fill="#40444b" height="5" width="100" x="480" y="40" rx="2" ry="2"/>
+    <rect fill="#40444b" height="2" width="70" x="480" y="50" rx="1" ry="1"/>
+  </g>
+  <g>
+    <circle fill="#40444b" r="9" cx="465" cy="70"/>
+    <rect fill="#40444b" height="5" width="100" x="480" y="65" rx="2" ry="2"/>
+    <rect fill="#40444b" height="2" width="70" x="480" y="75" rx="1" ry="1"/>
+  </g>
+</svg>

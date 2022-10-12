@@ -319,10 +319,16 @@ footer p {
 }
 
 .bottomtext {
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
     max-width: 42em;
+    white-space: break-spaces;
+    line-height: 30px;
+}
+
+.bottomtext img {
+    width:100%;
 }
 
 /* Dividers */

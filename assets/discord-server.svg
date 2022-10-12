@@ -6,11 +6,14 @@
   <rect fill="#2f3136" height="300" width="150" x="49" y="0" rx="0" ry="0"/>
   <rect fill="#36393f" height="300" width="250" x="198" y="0" rx="0" ry="0"/>
   <rect fill="#2f3136" height="300" width="150" x="447" y="0" rx="0" ry="0"/>
-  <circle fill="#36393f" r="14" cx="24" cy="22"/>
-  <circle fill="#36393f" r="14" cx="24" cy="60"/>
-  <circle fill="url(#server_icon)" r="14" cx="24" cy="94"/>
-  <circle fill="#36393f" r="14" cx="24" cy="128"/>
-  <rect fill="#36393f" height="2" width="20" x="14" y="40" rx="1" ry="1"/>
+  <circle fill="#FF605C" r="3" cx="14" cy="10"/>
+  <circle fill="#FFBD44" r="3" cx="24" cy="10"/>
+  <circle fill="#00CA4E" r="3" cx="34" cy="10"/>
+  <circle fill="#36393f" r="14" cx="24" cy="34"/>
+  <circle fill="#36393f" r="14" cx="24" cy="77"/>
+  <circle fill="url(#server_icon)" r="14" cx="24" cy="110"/>
+  <circle fill="#36393f" r="14" cx="24" cy="142"/>
+  <rect fill="#36393f" height="2" width="20" x="14" y="54" rx="1" ry="1"/>
   <rect fill="#36393f" height="17" width="125" x="60" y="10" rx="4" ry="4"/>
   <rect fill="#36393f" height="17" width="125" x="60" y="35" rx="4" ry="4"/>
   <rect fill="#36393f" height="17" width="125" x="60" y="60" rx="4" ry="4"/>

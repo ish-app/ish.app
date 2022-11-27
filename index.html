@@ -1,24 +1,18 @@
 ---
 layout: default
 ---
-<section id="home" class="home">
+<section id="home">
     <header>
-        <!--<div class="notice">
-            <p>We can put a banner here<strong><a href="/">Learn more &rarr;</a></strong></p>
-        </div>-->
         <nav>
-            <a href="{{ site.links.github }}"><p>GitHub</p></a>
-            <div class="divider whidden"></div>
-            <a href="{{ site.links.discord }}" target="_blank" rel="noopener"><p>Discord</p></a>
-            <div class="divider whidden"></div>
-            <a href="{{ site.links.twitter }}"><p>Twitter</p></a>
-            <div class="divider whidden"></div>
-            <a href="/blog"><p>Blog</p></a>
+            <a href="{{ site.links.github }}">GitHub</a>
+            <a href="{{ site.links.discord }}">Discord</a>
+            <a href="{{ site.links.twitter }}">Twitter</a>
+            <a href="/blog">Blog</a>
         </nav>
     </header>
     <div class="front-container">
-        <img src="assets/icon.png" alt="iSH icon" class="icon hhidden" />
-        <div class="fronttext">
+        <img src="assets/icon.png" alt="{{ site.title }} icon" class="icon hhidden" />
+        <div class="title">
             <h1>{{ site.title }}</h1>
             <h2>The Linux shell for iOS.</h2>
             <div class="actions">
@@ -39,65 +33,55 @@ layout: default
             <source type="image/webp" srcset="assets/front-iphone.webp">
             <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/front-iphone-dark.png">
             <source type="image/png" srcset="assets/front-iphone.png">
-            <img class="iphone whidden" src="assets/front-iphone.png" alt="iSH running on an iPhone">
+            <img class="iphone" src="assets/front-iphone.png" alt="{{ site.title }} running on an iPhone">
         </picture>
-    </div>
-    <div class="hhidden downarrow">
-        <a href="#info">
-            <svg viewBox="0 0 57 34" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M28.284 22.627L50.912 0l5.657 5.657L28.284 33.94 0 5.657 5.657 0l22.627 22.627z"/></svg>
-        </a>
     </div>
 </section>
 
-<section id="info" class="lightsec">
-    <h1>Wait, what's {{ site.title }}?</h1>
-    <hr />
-    <p class="meds">
+<section id="info" class="alt-section">
+    <h1><strong>Wait, what's {{ site.title }}?</strong></h1>
+    <p>
         {{ site.title }} is a project to get a Linux shell environment running locally on your iOS device, using a usermode x86 emulator.
     </p>
-    <div class="expl">
-        <div>
+    <div class="tidbits">
+        <div class="tidbit large">
+            <h2>iPadOS? You bet.</h2>
+            <p>{{ site.title }} also runs on iPad, bringing a terminal to larger displays as well.</p>
+            <div class="growth"></div>
             <picture>
                 <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="assets/front-ipad-dark.webp">
                 <source type="image/webp" srcset="assets/front-ipad.webp">
                 <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/front-ipad-dark.png">
                 <source type="image/png" srcset="assets/front-ipad.png">
-                <img class="ipad" src="assets/front-ipad.png" alt="iSH running on an iPad">
+                <img class="ipad" src="assets/front-ipad.png" alt="{{ site.title }} running on an iPad">
             </picture>
-            <p>...and it works on iPad, too!</p>
+            <div class="growth"></div>
         </div>
-        <div class="info">
-            <div class="infobox">
-                <p class="meds">BusyBox</p>
-                <p>You can edit files with sed and cat, move them around, and more!</p>
-                <picture>
-                    <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="assets/iphone-busybox-dark.webp">
-                    <source type="image/webp" srcset="assets/iphone-busybox.webp">
-                    <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/iphone-busybox-dark.png">
-                    <source type="image/png" srcset="assets/iphone-busybox.png">
-                    <img class="boxpict" src="assets/iphone-busybox.png" alt="Starting BusyBox on an iPhone">
-                </picture>
-            </div>
-            <div class="infobox">
-                <p class="meds">The Keyboard</p>
-                <p>
-                    {{ site.title }}'s keyboard addition makes navigation easier.
-                    <br />
-                    Here's what the buttons do:
-                </p>
-                <picture>
-                    <source type="image/webp" srcset="assets/iphone-keyboard.webp">
-                    <source type="image/png" srcset="assets/iphone-keyboard.png">
-                    <img class="boxpict" src="assets/iphone-keyboard.png" alt="The iSH keyboard addition on an iPhone">
-                </picture>
-            </div>
+        <div class="tidbit">
+            <h2>BusyBox</h2>
+            <p>You can edit files with sed and cat, move them around, and more!</p>
+            <picture>
+                <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="assets/iphone-busybox-dark.webp">
+                <source type="image/webp" srcset="assets/iphone-busybox.webp">
+                <source type="image/png" media="(prefers-color-scheme: dark)" srcset="assets/iphone-busybox-dark.png">
+                <source type="image/png" srcset="assets/iphone-busybox.png">
+                <img src="assets/iphone-busybox.png" alt="Starting BusyBox on an iPhone">
+            </picture>
+        </div>
+        <div class="tidbit">
+            <h2>Keyboard CTRL</h2>
+            <p>{{ site.title }}'s keyboard addition makes navigation easier.</p>
+            <picture>
+                <source type="image/webp" srcset="assets/iphone-keyboard.webp">
+                <source type="image/png" srcset="assets/iphone-keyboard.png">
+                <img src="assets/iphone-keyboard.png" alt="The {{ site.title }} keyboard addition as seen on an iPhone">
+            </picture>
         </div>
     </div>
 </section>
 
 <section id="get">
-    <h1>Sounds cool, can I get that?</h1>
-    <hr />
+    <h1><strong>Sounds cool, can I get that?</strong></h1>
     <p>Of course, let's get started!</p>
     <div class="getcontainer">
         <div>
@@ -108,10 +92,10 @@ layout: default
                 </a>
             </div>
             <a href="{{ site.links.testflight }}">
-                <p class="other">Join the TestFlight Beta</p>
+                <p class="mini-dl">Join the TestFlight Beta</p>
             </a>
         </div>
-        <div class="midline whidden"></div>
+        <div class="midline"></div>
         <div>
             <div class="actions">
                 <a class="get" href="/altstore">
@@ -120,17 +104,31 @@ layout: default
                 </a>
             </div>
             <a href="{{ site.links.github }}" class="">
-                <p class="other">Build {{ site.title }} from source</p>
+                <p class="mini-dl">Build {{ site.title }} from source</p>
             </a>
         </div>
     </div>
     <div class="bottomtext">
-        <p>Join our <a href="{{ site.links.discord }}">Discord server</a> if you have any questions or concerns, or you just want to chat! There's also a <a href="{{ site.links.reddit }}">subreddit</a> for discussions and a <a href="{{ site.links.twitter }}">Twitter</a>.</p>
-        <p>You can also become a <a href="https://patreon.com/tbodt">patron</a> if you would like support {{ site.title }}. Donations are very much appreciated, but will never be required; the app will always be completely free.</p>
+        <p>You can <a href="{{ site.links.patreon }}">become a patron</a> if you would like support {{ site.title }}. Donations are very much appreciated, but will never be required; the app will always be completely free.</p>
+    </div>
+</section>
+
+<section class="feed">
+    <div class="version">
+        {%- assign prerelease = site.github.releases | where: "prerelease", true | first -%}
+        <h2>New in <strong>{{ site.github.latest_release.name }}</strong></h2>
+        <div class="changelog"><p>{{ site.github.latest_release.body }}</p></div>
+        <p>Latest pre-release: <a href="{{ prerelease.html_url }}">{{ prerelease.name }}</a></p>
+    </div>
+    <div class="posts">
+        <h2><strong>Latest blog posts</strong></h2>
+        {% for post in site.posts limit:3 %}
+            <p>{{ post.date | date: "%Y-%m-%d" }} <a href="{{ post.url }}">{{ post.title }}</a></p>
+        {% endfor %}
+        <p><a href="/blog">View all</a></p>
     </div>
 </section>
 
 <footer>
-    <hr />
     <p>{{ site.title }}, &copy; 2017–{{ 'now' | date: "%Y" }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 </footer>

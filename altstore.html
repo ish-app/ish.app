@@ -3,8 +3,8 @@ layout: default
 ---
 {%- assign release = site.github.releases | first -%}
 {%- assign asset = release.assets | where: "name", "iSH.ipa" -%}
-<section class="home">
-    <div class="altcontainer">
+<section id="home">
+    <div id="altstore-container">
             <div class="step">
                 <div class="number">
                     <h1>1</h1>
@@ -15,8 +15,8 @@ layout: default
                 <div class="number">
                     <h1>2</h1>
                 </div>
-                <h2>Install <a href="altstore://install?url={{ asset[0].browser_download_url }}">iSH</a></h2>
+                <h2>Install <a href="altstore://install?url={{ asset[0].browser_download_url }}">{{ site.title }}</a></h2>
             </div>
-        <p>To get automatic updates, <a href="https://patreon.com/rileytestut">subscribe to the AltStore Patreon</a>, get the beta of AltStore, and <a href="{{ site.links.altstore }}">add the iSH AltStore source</a>.</p>
+        <p>To get automatic updates, <a href="https://patreon.com/rileytestut">subscribe to the AltStore Patreon</a>, get the beta of AltStore, and <a href="{{ site.links.altstore }}">add the {{ site.title }} AltStore source</a>.</p>
     </div>
 </section>

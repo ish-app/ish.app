@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/.well-known/webfinger"
+  [headers.values]
+    Content-Type = "application/jrd+json"

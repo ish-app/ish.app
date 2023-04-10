@@ -25,3 +25,4 @@ exclude:
   - README.md
 include:
   - _redirects # for netlify
+  - .well-known

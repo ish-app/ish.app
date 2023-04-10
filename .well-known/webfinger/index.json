@@ -1,0 +1,10 @@
+{
+    "subject": "acct:ish@ish.app",
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/activity+json",
+            "href": "https://publ.ish.app/ish"
+        }
+    ]
+}

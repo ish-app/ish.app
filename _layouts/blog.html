@@ -3,6 +3,7 @@
     <head>
         <title>{{ site.title }} | Blog</title>
         <link rel="stylesheet" href="/blog.css" />
+        <link rel="stylesheet" href="/fonts.css" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" type="image/png" href="/assets/icon.png"/>
@@ -16,7 +17,8 @@
         <meta property="og:locale" content="en_GB" />
         <meta name="theme-color" content="#20233c">
 
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+        <link rel="preload" href="/assets/fonts/ubuntu-400.woff2" as="font" type="font/woff2">
+        <link rel="preload" href="/assets/fonts/ubuntu-700.woff2" as="font" type="font/woff2">
     </head>
     <body>
         <header>
@@ -29,7 +31,6 @@
                 </a>
                 <div>
                     {% if page.layout == "post" %}<a href="/blog">Blog</a>{% endif %}
-                    <!--<a href="{{ site.links.appstore }}">Download</a>-->
                 </div>
             </nav>
         </header>

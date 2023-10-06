@@ -25,7 +25,7 @@ a {
     outline: 0;
 }
 
-a:hover { text-decoration: underline; }
+a:hover, a:focus { text-decoration: underline; }
 
 hr {
     border: 0;
@@ -55,7 +55,7 @@ nav a {
     color: white;
 }
 
-nav a:hover {
+nav a:hover, nav a:focus {
     background-color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
     border-color: #fff;
@@ -137,12 +137,12 @@ footer p {
     color: #fff;
 }
 
-.get:hover {
-    border-color: rgba(255, 255, 255, 0.3);
+.get:hover, .get:focus {
+    border-color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
 }
 
-.title { /* primary text on front page */
+.title {
     text-align: left;
     flex-grow: 1;
     margin: 0 2em 0 2em;

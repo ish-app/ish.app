@@ -17,7 +17,7 @@ a {
     outline: 0;
 }
 
-a:hover {
+a:hover, a:focus {
     text-decoration: underline;
 }
 
@@ -26,6 +26,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: #20233c;
+    border-bottom: 2px solid #2d2d2d;
 }
 
 nav {

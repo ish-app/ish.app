@@ -17,21 +17,21 @@
         <meta property="og:locale" content="en_GB" />
         <meta name="theme-color" content="#20233c">
 
-        <link rel="preload" href="/assets/fonts/ubuntu-400.woff2" as="font" type="font/woff2">
-        <link rel="preload" href="/assets/fonts/ubuntu-700.woff2" as="font" type="font/woff2">
+        <link rel="preload" href="/assets/fonts/ubuntu-400.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/fonts/ubuntu-700.woff2" as="font" type="font/woff2" crossorigin>
     </head>
     <body>
         <header>
             <nav>
-                <a href="/" style="text-decoration: none;">
+                <a href="/">
                     <div class="title">
-                        <img src="/assets/icon.png" />
+                        <img src="/assets/icon.png" alt="iSH app icon" />
                         <p class="name">{{ site.title }}</p>
                     </div>
                 </a>
-                <div>
-                    {% if page.layout == "post" %}<a href="/blog">Blog</a>{% endif %}
-                </div>
+                {% if page.layout == "post" %}
+                    <a href="/blog">Blog</a>
+                {% endif %}
             </nav>
         </header>
         <div class="content">

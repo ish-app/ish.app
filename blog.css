@@ -1,7 +1,7 @@
 body {
     background-color: #0f0f0f;
     color: #fff;
-    font-family: Ubuntu, 'Noto Sans', sans-serif;
+    font-family: "Ubuntu", "Noto Sans", sans-serif;
     margin: 0;
 }
 
@@ -17,7 +17,7 @@ a {
     outline: 0;
 }
 
-a:hover {
+a:hover, a:focus {
     text-decoration: underline;
 }
 
@@ -26,6 +26,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: #20233c;
+    border-bottom: 2px solid #2d2d2d;
 }
 
 nav {

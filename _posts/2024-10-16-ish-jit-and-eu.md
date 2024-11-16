@@ -56,7 +56,7 @@ Unlike today’s major browsers, iSH is a small project. It’s a lot simpler, a
 
 In late September, we finally received a reply to our interoperability request. The response was terse but the actual rationale was shorter still:
 
-After review, we have determined that it does not fall in scope of article 6(7) DMA. Apple does not itself offer emulation functionalities on iOS and it does not offer JIT compilation for non-browser apps on iOS.
+> After review, we have determined that it does not fall in scope of article 6(7) DMA. Apple does not itself offer emulation functionalities on iOS and it does not offer JIT compilation for non-browser apps on iOS.
 
 There is a term in the Apple community that refers to the all-too-common practice of an indie app suddenly finding that their software has become a bullet point in the latest OS release: [Sherlocking](https://en.wikipedia.org/wiki/Sherlock_\(software\)#Sherlocked_as_a_term). Despite likely holding the dubious honor of the app that its users most want to be Sherlocked, iSH’s core value proposition has never truly been integrated into the platform. iSH *uses* iOS technologies but it does not *compete* with what iOS offers, because Apple does not provide comparable functionality. It’s unique. Or at least as unique as it can be in a market with a dozen terminal emulator apps with different tradeoffs of their own.
 

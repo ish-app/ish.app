@@ -34,21 +34,22 @@ hr {
 }
 
 header {
-    height: 60px;
-    width: 100%;
-    line-height: 32px;
+    width: 100vw;
+}
+
+nav {
+    padding: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 12px;
 }
 
-nav { display: inherit; }
-
 nav a {
+    flex-grow: 1;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 0 8px 0 8px;
-    width: 140px;
-    margin: 0 12px 0 12px;
+    max-width: 140px;
+    line-height: 32px;
     border-radius: 8px;
     transition: background .05s ease-in-out, border-color .2s;
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -81,7 +82,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(180deg, var(--ish-primary), var(--ish-secondary));
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Contains entire front page */
@@ -296,12 +297,6 @@ section > p {
 
 /* Mobile optimisations */
 @media only screen and (max-width: 750px) {
-    header { justify-content: space-around; }
-    nav a {
-        padding: 0 5px 0 5px;
-        width: 80px;
-        margin: 6px;
-    }
     .front-container {
         flex-direction: column;
         margin: 0;
@@ -335,15 +330,6 @@ section > p {
 
 @media only screen and (max-width: 860px) {
     .iphone { display: none; }
-}
-
-@media only screen and (max-width: 400px) {
-    nav a {
-        padding: 2px 8px 2px 8px;
-        width: auto;
-        margin: 4px;
-        font-size: 13.5pt;
-    }
 }
 
 /* AltStore page */

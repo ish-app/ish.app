@@ -12,13 +12,12 @@ main {
 }
 
 a {
-    text-decoration: none;
     color: #85beff;
     outline: 0;
 }
 
 a:hover, a:focus {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 header {
@@ -42,7 +41,14 @@ nav a {
     font-size: 20px;
 }
 
-header a { color: white; }
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover, header a:focus {
+    text-decoration: underline;
+}
 
 .title {
     display: flex;
@@ -105,12 +111,12 @@ aside span { font-weight: bold }
 
 .aside-update     { border-left: 4px solid green }
 .aside-warning    { border-left: 4px solid orange }
-.aside-disclaimer { border-left: 4px solid #eb152e }
+.aside-disclaimer { border-left: 4px solid #ff354c }
 .aside-fun-fact   { border-left: 4px solid #34a8eb }
 
 .aside-update span     { color: #32a852 }
 .aside-warning span    { color: orange }
-.aside-disclaimer span { color: #eb152e }
+.aside-disclaimer span { color: #ff354c }
 .aside-fun-fact span   { color: #34a8eb }
 
 hr {
@@ -132,6 +138,18 @@ hr {
     }
 
     aside {
-        background-color: #e5e5e5;
+        background-color: #fff;
     }
+
+    .desc {
+        color: #505050;
+    }
+
+    .aside-update     { border-left: 4px solid green }
+    .aside-disclaimer { border-left: 4px solid #de2e42 }
+    .aside-fun-fact   { border-left: 4px solid #267cad }
+
+    .aside-update span     { color: green }
+    .aside-disclaimer span { color: #de2e42 }
+    .aside-fun-fact span   { color: #267cad }
 }

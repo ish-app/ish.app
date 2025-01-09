@@ -17,15 +17,14 @@ body {
     font-size: 13pt;
 }
 
-h1, h2 { font-weight: 400; }
+h1, h2, h3 { font-weight: 400; }
 
 a {
     color: var(--ish-blue);
-    text-decoration: none;
     outline: 0;
 }
 
-a:hover, a:focus { text-decoration: underline; }
+a:hover, a:focus { text-decoration: none; }
 
 hr {
     border: 0;
@@ -54,6 +53,7 @@ nav a {
     transition: background .05s ease-in-out, border-color .2s;
     border: 2px solid rgba(255, 255, 255, 0.1);
     color: white;
+    text-decoration: none;
 }
 
 nav a:hover, nav a:focus {
@@ -122,6 +122,8 @@ footer p {
     transition: border-color .15s ease-in-out;
     padding: 0.4em;
     margin-bottom: 6px;
+    text-decoration: none;
+    color: #fff;
 }
 
 .get img {
@@ -135,7 +137,6 @@ footer p {
     flex-grow: 1;
     font-size: 15pt;
     margin: 0;
-    color: #fff;
 }
 
 .get:hover, .get:focus {
@@ -154,7 +155,9 @@ footer p {
     line-height: 48px;
 }
 
-.title h1, .title h2 { margin: 10px 0 10px 0; }
+.title .slogan { font-size: 19pt }
+
+.title h1, .title .slogan { margin: 10px 0 10px 0; }
 
 .iphone {
     height: auto;
@@ -168,7 +171,7 @@ footer p {
     padding: 1px;
 }
 
-section > h1 {
+section > h2 {
     font-size: 22pt;
     margin: 20px 0 0 0;
 }
@@ -206,9 +209,10 @@ section > p {
 }
 
 .tidbit p { margin: 4px 0 12px 0; }
-.tidbit h2 {
-    margin: 4px 0 0 0;
+.tidbit h3 {
+    margin: 4px 0;
     color: var(--ish-purple);
+    font-size: 19pt;
 }
 
 .tidbit img {
@@ -377,6 +381,12 @@ section > p {
     }
     body, .alt-section, #altstore-container { color: #000; }
     #home { color: #fff; }
+    .getcontainer .get {
+        background-color: var(--background-alt);
+        color: black;
+    }
+    .getcontainer .get { border: 2px solid var(--accent); }
+    .getcontainer .get:hover, .getcontainer .get:focus { border: 2px solid var(--ish-blue); }
     .tidbit {
         border: 2px solid var(--accent);
         background-color: var(--background);

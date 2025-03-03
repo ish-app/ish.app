@@ -17,15 +17,14 @@ body {
     font-size: 13pt;
 }
 
-h1, h2 { font-weight: 400; }
+h1, h2, h3 { font-weight: 400; }
 
 a {
     color: var(--ish-blue);
-    text-decoration: none;
     outline: 0;
 }
 
-a:hover, a:focus { text-decoration: underline; }
+a:hover, a:focus { text-decoration: none; }
 
 hr {
     border: 0;
@@ -34,25 +33,27 @@ hr {
 }
 
 header {
-    height: 60px;
-    width: 100%;
-    line-height: 32px;
+    width: 100vw;
+}
+
+nav {
+    padding: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 12px;
 }
 
-nav { display: inherit; }
-
 nav a {
+    flex-grow: 1;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 0 8px 0 8px;
-    width: 140px;
-    margin: 0 12px 0 12px;
+    max-width: 140px;
+    line-height: 32px;
     border-radius: 8px;
     transition: background .05s ease-in-out, border-color .2s;
     border: 2px solid rgba(255, 255, 255, 0.1);
     color: white;
+    text-decoration: none;
 }
 
 nav a:hover, nav a:focus {
@@ -81,7 +82,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(180deg, var(--ish-primary), var(--ish-secondary));
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Contains entire front page */
@@ -121,6 +122,8 @@ footer p {
     transition: border-color .15s ease-in-out;
     padding: 0.4em;
     margin-bottom: 6px;
+    text-decoration: none;
+    color: #fff;
 }
 
 .get img {
@@ -134,7 +137,6 @@ footer p {
     flex-grow: 1;
     font-size: 15pt;
     margin: 0;
-    color: #fff;
 }
 
 .get:hover, .get:focus {
@@ -153,7 +155,9 @@ footer p {
     line-height: 48px;
 }
 
-.title h1, .title h2 { margin: 10px 0 10px 0; }
+.title .slogan { font-size: 19pt }
+
+.title h1, .title .slogan { margin: 10px 0 10px 0; }
 
 .iphone {
     height: auto;
@@ -167,7 +171,7 @@ footer p {
     padding: 1px;
 }
 
-section > h1 {
+section > h2 {
     font-size: 22pt;
     margin: 20px 0 0 0;
 }
@@ -205,9 +209,10 @@ section > p {
 }
 
 .tidbit p { margin: 4px 0 12px 0; }
-.tidbit h2 {
-    margin: 4px 0 0 0;
+.tidbit h3 {
+    margin: 4px 0;
     color: var(--ish-purple);
+    font-size: 19pt;
 }
 
 .tidbit img {
@@ -296,12 +301,6 @@ section > p {
 
 /* Mobile optimisations */
 @media only screen and (max-width: 750px) {
-    header { justify-content: space-around; }
-    nav a {
-        padding: 0 5px 0 5px;
-        width: 80px;
-        margin: 6px;
-    }
     .front-container {
         flex-direction: column;
         margin: 0;
@@ -335,15 +334,6 @@ section > p {
 
 @media only screen and (max-width: 860px) {
     .iphone { display: none; }
-}
-
-@media only screen and (max-width: 400px) {
-    nav a {
-        padding: 2px 8px 2px 8px;
-        width: auto;
-        margin: 4px;
-        font-size: 13.5pt;
-    }
 }
 
 /* AltStore page */
@@ -391,6 +381,12 @@ section > p {
     }
     body, .alt-section, #altstore-container { color: #000; }
     #home { color: #fff; }
+    .getcontainer .get {
+        background-color: var(--background-alt);
+        color: black;
+    }
+    .getcontainer .get { border: 2px solid var(--accent); }
+    .getcontainer .get:hover, .getcontainer .get:focus { border: 2px solid var(--ish-blue); }
     .tidbit {
         border: 2px solid var(--accent);
         background-color: var(--background);
